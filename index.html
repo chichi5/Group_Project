@@ -3,23 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>MEATGQ橡木炙烤牛排館/ MeatGQ Steak / 台中牛排館</title>
     <!-- BootstrapCDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- SwiperCDN -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.css" rel="stylesheet" />
 
 
     <style>
+        /* basic style definition */
+        /* •••••••••••••••••••••••••••••••• */
         * {
             box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+        }
+
+
+        /*  specific panel "food" */
+        /* •••••••••••••••••••••••••••••••• */
+        #food {
+            background-image: url(food_bg.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+
+        /* media */
+        /* •••••••••••••••••••••••••••••••• */
+        .media {
+            width: 100%;
+            height: calc(100vh - 110px);
+        }
+
+        .swiper-container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .bg_1,
+        .bg_2,
+        .bg_3 {
+            width: 100%;
+            height: 100%;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .bg_1 {
+            background-image: url('media.jpg');
+        }
+
+        .bg_2 {
+            background-image: url('media.jpg');
+        }
+
+        .bg_3 {
+            background-image: url('media.jpg');
+        }
+
+
+        /* footer */
+        /* •••••••••••••••••••••••••••••••• */
+        footer {
+            background-color: black;
+            height: 500px;
+            color: white;
         }
     </style>
 </head>
 <body>
     <!-- menu -->
-    <section>
-        <div class="container mt-5">
-            <h1>MENU</h1>
-            <div class="row mt-5">
+    <section class="my-5">
+        <div class="container">
+            <h1 class="mb-5">MENU</h1>
+            <div class="row">
                 <div class="card bg-dark text-white">
                     <img src="menu.jpg" class="card-img" alt="...">
                     <div class="card-img-overlay">
@@ -34,39 +95,166 @@
 
 
     <!-- about -->
-    <section>
+    <section class="my-5">
         <div class="container">
-            <h1>About</h1>        
+            <h1 class="mb-5">About</h1>        
             <div class="row">
-              
+                <div class="col-lg-6 p-0">
+                    <div class="card">
+                        <img src="danny.jpg" class="card-img-top" alt="...">                        
+                    </div>
+                </div>                
+                <div class="col-lg-6 p-0">
+                    <div class="card">                        
+                        <div class="card-body">
+                          <h5 class="card-title">
+                            資深名廚 鄧有癸</h5>
+                          <p class="card-text">
+                            鄧有癸投入餐飲逾40年，出身「新濱鐵板燒」並且擔任18年料理長，在離開新濱之後即陸續開設「犇」、「鱻」鐵
+                            板燒，並專注研發牛排料理，精益求精的廚藝獲得許多飯店企業家的青睞，受邀擔任廚藝顧問，為數家五星級飯店
+                            成功的打造專業牛排館，引領台灣的牛排館進入一個嶄新、國際化的視野，奠定『鐵板達人』、『牛排教父』的地
+                            位與榮銜。
+                          </p>                          
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
 
     <!-- food -->
-    <section>
+    <section id="food" class="my-5 py-5">
         <div class="container">
-            <h1>Food</h1>        
+            <h1 class="mb-5">Food</h1>
+            <div class="row mb-4">
+                <div class="col-lg-12 p-0">
+                    <div class="card bg-dark">
+                        <img src="food.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title">我是肉肉</h5>
+                          <p class="card-text">
+                            青山依舊在，幾度夕陽紅。慣看秋風春月。一壺濁酒喜
+                            相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝
+                            水，白髮漁樵江渚上，古今多少事，都付笑談中。
+                          </p>                      
+                        </div>
+                    </div>
+                </div>                                               
+            </div>
             <div class="row">
-              
+                <div class="col-lg-12 p-0">
+                    <div class="card bg-dark">
+                        <img src="food.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                          <h5 class="card-title">我是肉肉</h5>
+                          <p class="card-text">
+                            青山依舊在，幾度夕陽紅。慣看秋風春月。一壺濁酒喜
+                            相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝
+                            水，白髮漁樵江渚上，古今多少事，都付笑談中。
+                          </p>                      
+                        </div>
+                    </div>
+                </div>                
             </div>
         </div>
     </section>
 
 
+    <!-- media -->
+    <section>
+        <div class="container">
+            <h1 class="mb-5">MEDIA</h1>
+        </div>
+        <div class="container-fluid">
+            <div class="media">
+                <div class="swiper-container">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="bg_1 d-lg-block d-none"></div>
+                      <img src="media.jpg" class="d-block w-100 d-lg-none" alt="...">
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="bg_2 d-lg-block d-none"></div>
+                      <img src="media.jpg" class="d-block w-100 d-lg-none" alt="...">
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="bg_3 d-lg-block d-none"></div>
+                      <img src="media.jpg" class="d-block w-100 d-lg-none" alt="...">
+                    </div>
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+                </div>
+              </div>
+        </div>
+
+        
+    </section>
+
     <!-- footer -->
-    <footer></footer>
+    <footer>
+        © 本網站僅供教學及練習使用，若有冒犯請洽0912-345678
+    </footer>
 
 
     <!-- jQueryCDN -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.jsCDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <!-- BootstrapCDN -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <!-- SwiperCDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.js"></script>
 
 
     <script>
+        // Swiper
+        var mySwiper = new Swiper('.swiper-container', {
+            direction: 'horizontal', // 垂直切換選項
+            speed: 1000, // 切換速度
+            loop: true, // 循環模式選項
 
+            // 滾動效果
+            effect : 'coverflow', // 可設定為"fade"（淡入）"cube"（方塊）"coverflow"（3d流）"flip"（3d翻轉）
+            slidesPerView: 2, // 頁面數量
+            centeredSlides: true,
+            
+            coverflow: {
+                rotate: 30,
+                stretch: 10,
+                depth: 60,
+                modifier: 2,
+                slideShadows : true
+            },            
+
+            // 自動播放
+            autoplay: {
+                delay: 3000, // 自動播放間隔時間
+                stopOnLastSlide: false, // 切換到最後一個是否停止，但是在loop:true下無效果
+                disableOnInteraction: true, // 使用者觸碰,懸停，拖放是否自動播放停止，預設為true
+                reverseDirection: false, // 是否開啟反向輪播，預設為false
+            },
+
+            // 如果需要分頁器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前進後退按鈕
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // 如果需要滾動條
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+
+            
+        })
     </script>
 </body>
 </html>
