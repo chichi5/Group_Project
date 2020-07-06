@@ -3,31 +3,49 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="apple-touch-icon" type="image/png"
         href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
-    <meta name="apple-mobile-web-app-title" content="CodePen">
-    <link rel="shortcut icon" type="image/x-icon"
-        href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+    <meta name="apple-mobile-web-app-title" content="CodePen">    
     <link rel="mask-icon" type=""
         href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
-        color="#111" />    
+        color="#111" />
+    <title>CodePen - Youtube card</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-
-
     <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        *,
+        *:before,
+        *:after {
+            box-sizing: border-box;
+        }
+
         /* ------------ SETTINGS ------------ */
         body {
             background: #121212;
         }
 
         /* ------------ CARD ------------ */
-        .card {
+        .card-v {
             width: 70vw;
             height: calc(9/16 * 70vw);
             max-width: calc(16/9 * 70vh);
             max-height: 70vh;
+            display: -webkit-box;
             display: flex;
             position: relative;
             border-radius: 6px;
@@ -45,18 +63,21 @@
             opacity: 0;
             background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1613479/play.svg") center center/cover;
             cursor: pointer;
-            transition: opacity 0.3s ease-out;
+            -webkit-transition: opacity .3s ease-out;
+            transition: opacity .3s ease-out;
         }
 
         .card-play:after {
-            content: "";
+            content: '';
             position: absolute;
             top: 50%;
             left: 50%;
+            -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
             border-radius: 50%;
             background: #000;
-            transition: all 0.5s ease-out;
+            -webkit-transition: all .5s ease-out;
+            transition: all .5s ease-out;
         }
 
         .card-video {
@@ -75,22 +96,24 @@
             height: 100%;
         }
 
-        .card:after {
-            content: "";
+        .card-v:after {
+            content: '';
             width: 250%;
             height: 250%;
             position: absolute;
             top: var(--y);
             left: var(--x);
+            -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
             opacity: 0;
             background: radial-gradient(circle closest-side, rgba(255, 255, 255, 0.3), transparent);
+            -webkit-transition: opacity 0.5s ease-out;
             transition: opacity 0.5s ease-out;
         }
 
         /* ------------ STATES ------------ */
-        .card:hover:after,
-        .card:hover .card-play {
+        .card-v:hover:after,
+        .card-v:hover .card-play {
             opacity: 1;
         }
 
@@ -105,15 +128,26 @@
         .video-is-open .card-play:after {
             width: 2vh;
             height: 2vh;
+            -webkit-transform: translate(-50%, -50%) scale(88.8888888889);
             transform: translate(-50%, -50%) scale(88.8888888889);
-            transition: transform 0.5s ease-out;
+            -webkit-transition: -webkit-transform .5s ease-out;
+            transition: -webkit-transform .5s ease-out;
+            transition: transform .5s ease-out;
+            transition: transform .5s ease-out, -webkit-transform .5s ease-out;
         }
     </style>
+    <script>
+        window.console = window.console || function (t) { };
+    </script>
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
 </head>
 
-
 <body translate="no">
-    <div class="card">
+    <div class="card-v">
         <div class="card-play"></div>
         <div class="card-video">
             <iframe id="video"
@@ -121,13 +155,11 @@
                 frameborder="0" allowfullscreen="allowfullscreen"></iframe>
         </div>
     </div>
-
     <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
-
     <script id="rendered-js">
         // Variables
         var player,
-            card = document.querySelector('.card'),
+            card = document.querySelector('.card-v'),
             play = document.querySelector('.card-play'),
             video = document.querySelector('.card-video');
 
@@ -139,7 +171,7 @@
 
             card.style.setProperty('--x', x + 'px');
             card.style.setProperty('--y', y + 'px');
-        }
+        };
 
 
         // Youtube API
@@ -149,6 +181,8 @@
                     'onReady': onPlayerReady
                 }
             });
+
+
         }
 
 
@@ -169,10 +203,8 @@
         tag.src = "//www.youtube.com/player_api";
         var firstScriptTag = document.getElementsByTagName('script')[0];
         firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-
+        //# sourceURL=pen.js
     </script>
-
 </body>
 
 </html>
