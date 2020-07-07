@@ -3,525 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MEATGQ橡木炙烤牛排館/ MeatGQ Steak / 台中牛排館</title>
-    <!-- BootstrapCDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <!-- SwiperCDN -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.css" rel="stylesheet" />
-    <!-- MediaCDN -->
-    <link rel="apple-touch-icon" type="image/png"
-        href="https://static.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png" />
-    <meta name="apple-mobile-web-app-title" content="CodePen">    
-    <link rel="mask-icon" type=""
-        href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
-        color="#111" />    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <title>Document</title>
+
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 
     <style>
-        /* basic style definition */
-        /* •••••••••••••••••••••••••••••••• */        
+        /* 基本 */
         * {
             box-sizing: border-box;
         }
 
         body {
-            margin: 0;            
+            margin: 0;
         }
 
 
-        /*  specific panel "menu" */
-        /* •••••••••••••••••••••••••••••••• */
-        #menu {
-            height: 100vh;
-        }
-
-
-        /*  specific panel "about" */
-        /* •••••••••••••••••••••••••••••••• */
-        @import url("https://fonts.googleapis.com/css?family=Montserrat:600");
-
-        .header__main {
-            position: relative;
-            min-height: 100vh;
-            overflow: hidden;
-            text-align: left;
-        }
-
-        .slider {
-            width: 100vw;
-            height: 100vh;
-        }
-
-        .slide {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            position: absolute;
+        /* 首頁 */
+        #home {
             width: 100%;
-        }
-
-        .slide:target .slide__bg {
-            opacity: 1;
-        }
-
-        .slide:target .slide__image {
-            transform: translate(0);
-            opacity: 1;
-            transition-delay: 0.5s;
-            filter: blur(0) drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.35));
-        }
-
-        .slide__bg {
-            position: absolute;
-            z-index: 0;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(2);
-            filter: blur(50px);
-            opacity: 0;
-            transition: opacity 1s ease;
-            will-change: opacity;
-        }
-
-        .slide__images {
-            position: relative;
-            width: 100%;
-            max-width: 900px;
-            height: 365px;
-            margin: 0 20px;
-        }
-
-        .slide__image {
-            position: absolute;
-            width: 100%;
-            opacity: 0;
-            transition: all 0.5s ease-in-out 0s;
-            filter: blur(10px) drop-shadow(0px 10px 30px rgba(0, 0, 0, 0.35));
-            will-change: transform, opacity, filter;
-        }
-
-        .slide__image svg {
-            display: block;
-        }
-
-        .slide__image--left {
-            transform: translate(0.75%, -10px);
-        }
-
-        .slide__image--right {
-            top: 5vmin;
-            transform: translate(-0.75%, 10px);
-        }
-
-        .slider__pagination {
-            position: absolute;
-            bottom: 7vh;
-            width: 100%;
-            text-align: center;
-        }
-
-        .button {
-            position: relative;
-            display: inline-block;
-            padding: 20px 40px;
-            border: 2px solid #fff;
-            line-height: 1;
-            font: 600 12px "Montserrat", sans-serif;
-            text-align: center;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: white;
-            transition: all 0.25s ease;
-            appearance: none;
-        }
-
-        .button:hover {
-            color: #333;
-            background-color: white;
-        }
-
-
-        /*  specific panel "food" */
-        /* •••••••••••••••••••••••••••••••• */
-        #food {
             height: 100vh;
-            background-image: url(food_bg.jpg);
-            background-position: center;
-            background-repeat: no-repeat;
+            background-image: url(bg.png);
             background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
 
-        /*  specific panel "media" */
-        /* •••••••••••••••••••••••••••••••• */
-        .swiper-container {
+        /* 菜單 */
+        #menu {
             width: 100%;
-            height: 100%;
+            height: 100vh;
+            background-image: url(silk-fabric-texture-15.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
-        .card-v {
-            width: 70vw;
-            height: calc(9/16 * 70vw);
-            max-width: calc(16/9 * 70vh);
-            max-height: 70vh;
-            display: flex;
-            position: relative;
-            border-radius: 6px;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-            background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1613479/inception.jpg") center center/cover;
-            overflow: hidden;
-        }
 
-        .card-play {
-            width: 48px;
-            height: 48px;
-            position: relative;
-            z-index: 1;
-            margin: auto;
-            opacity: 0;
-            background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1613479/play.svg") center center/cover;
-            cursor: pointer;
-            transition: opacity 0.3s ease-out;
-        }
-
-        .card-play:after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            border-radius: 50%;
-            background: #000;
-            transition: all 0.5s ease-out;
-        }
-
-        .card-video {
-            display: none;
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            z-index: 2;
-            background: #000;
-        }
-
-        .card-video iframe {
+        /* 關於 */
+        #about {
             width: 100%;
-            height: 100%;
-        }
-
-        .card-v:after {
-            content: "";
-            width: 250%;
-            height: 250%;
-            position: absolute;
-            top: var(--y);
-            left: var(--x);
-            transform: translate(-50%, -50%);
-            opacity: 0;
-            background: radial-gradient(circle closest-side, rgba(255, 255, 255, 0.3), transparent);
-            transition: opacity 0.5s ease-out;
-        }
-
-        .card-v:hover:after,
-        .card-v:hover .card-play {
-            opacity: 1;
-        }
-
-        .video-is-open:after {
-            display: none;
-        }
-
-        .video-is-open .card-play {
-            opacity: 1;
-        }
-
-        .video-is-open .card-play:after {
-            width: 2vh;
-            height: 2vh;
-            transform: translate(-50%, -50%) scale(88.8888888889);
-            transition: transform 0.5s ease-out;
+            height: 100vh;
+            background-image: url(91387257_2518419098371889_241937835655954432_o.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
 
-        /* footer */
-        /* •••••••••••••••••••••••••••••••• */
+        /* 食物 */
+        #food {
+            width: 100%;
+            height: 100vh;
+            background-image: url(1395290577.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+
+        /* 媒體 */
+        #media {
+            width: 100%;
+            height: 100vh;
+            background-image: url(image-wooden-table-front-abstract-blurred-restaurant-lights-background_36051-392.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+
+        /* 頁尾 */
         footer {
-            background-color: black;
-            height: 500px;
-            color: white;
+            width: 100%;
+            height: 612px;
+            background-image: url(footer_bg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
     </style>
 </head>
-<body translate="no">
-    <!-- menu -->
-    <section id="menu" class="my-5">
-        <div class="container">
-            <h1 class="mb-5">— MENU</h1>
-            <div class="row">
-                <div class="card bg-dark text-white">
-                    <img src="menu.jpg" class="card-img" alt="...">                    
-                </div>
-            </div>
-        </div>
-    </section>
+<body>
+    <!-- 首頁 -->
+    <div id="home" class="container-fluid">
+
+    </div>
 
 
-    <!-- about -->
-    <section class="my-5">
-        <div class="container">
-            <h1 class="mb-5">— About</h1>
-        </div>
-        <header class="header__main">
-            <div class="slider">
-                <svg class="slider__mask" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                    viewBox="0 0 1920 1080" width="0" height="0">
-                    <defs>
-                        <!-- Slide 1 -->
-                        <pattern id="bg1" patternUnits="userSpaceOnUse" width="1920" height="1080" viewBox="0 0 1920 1080">
-                            <image
-                                xlink:href="https://images.unsplash.com/photo-1454328911520-ccf83f1ef41d?dpr=1&auto=format&fit=crop&w=2000&h=2000&q=80&cs=tinysrgb&crop=&bg="
-                                width="100%" height="100%" />
-                        </pattern>
-                        <pattern id="pattern1l" patternUnits="userSpaceOnUse" width="562" height="366"
-                            viewBox="0 0 562 366">
-                            <image
-                                xlink:href="https://images.unsplash.com/photo-1454328911520-ccf83f1ef41d?dpr=1&auto=format&fit=crop&w=600&h=600&q=80&cs=tinysrgb&crop=&bg="
-                                width="600px" height="600px" />
-                        </pattern>
-                        <pattern id="pattern1r" patternUnits="userSpaceOnUse" x="365px" width="562" height="366"
-                            viewBox="0 0 562 366">
-                            <image
-                                xlink:href="https://images.unsplash.com/photo-1497215842964-222b430dc094?dpr=1&auto=format&fit=crop&w=600&h=600&q=80&cs=tinysrgb&crop=&bg="
-                                width="600px" height="600px" />
-                        </pattern>
-    
-                        <!-- Slide 2 -->
-                        <pattern id="bg2" patternUnits="userSpaceOnUse" width="1920" height="1080" viewBox="0 0 1920 1080">
-                            <image
-                                xlink:href="https://images.unsplash.com/photo-1497377825569-02ad2f9edb81?dpr=1&auto=format&fit=crop&w=2000&h=2000&q=80&cs=tinysrgb&crop=&bg="
-                                width="100%" height="100%" />
-                        </pattern>
-                        <pattern id="pattern2l" patternUnits="userSpaceOnUse" width="562" height="366"
-                            viewBox="0 0 562 366">
-                            <image
-                                xlink:href="https://images.unsplash.com/photo-1497377825569-02ad2f9edb81?dpr=1&auto=format&fit=crop&w=600&h=600&q=80&cs=tinysrgb&crop=&bg="
-                                width="600px" height="600px" />
-                        </pattern>
-                        <pattern id="pattern2r" patternUnits="userSpaceOnUse" x="365" width="562" height="366"
-                            viewBox="0 0 562 366">
-                            <image
-                                xlink:href="https://images.unsplash.com/photo-1496060169243-453fde45943b?dpr=1&auto=format&fit=crop&w=600&h=600&q=80&cs=tinysrgb&crop=&bg="
-                                width="600px" height="600px" />
-                        </pattern>
-                    </defs>
-                </svg>
-    
-                <div class="slide" id="slide-1">
-                    <svg class="slide__bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1920" height="1080">
-                        <rect x="0" y="0" width="1920" height="1080" fill="url(#bg1)" />
-                    </svg>
-                    <div class="slide__images">
-                        <div class="slide__image slide__image--left">
-                            <svg viewBox="0 0 900 365" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" x="0px" y="0px">
-                                <path d="M 0 0 L 0 365 L 351.2382 365 L 562 0 L 0 0 Z" fill="url(#pattern1l)" />
-                            </svg>
-                        </div>
-    
-                        <div class="slide__image slide__image--right">
-                            <svg viewBox="0 0 900 365" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" x="0px" y="0px">
-                                <path d="M 900 365 L 900 0 L 548.7618 0 L 338 365 L 900 365 Z" fill="url(#pattern1r)" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="slide" id="slide-2">
-                    <svg class="slide__bg" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="1920" height="1080">
-                        <rect x="0" y="0" width="1920" height="1080" fill="url(#bg2)" />
-                    </svg>
-                    <div class="slide__images">
-                        <div class="slide__image slide__image--left">
-                            <svg viewBox="0 0 900 365" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" x="0px" y="0px">
-                                <path d="M 0 0 L 0 365 L 351.2382 365 L 562 0 L 0 0 Z" fill="url(#pattern2l)" />
-                            </svg>
-                        </div>
-    
-                        <div class="slide__image slide__image--right">
-                            <svg viewBox="0 0 900 365" version="1.1" xmlns="http://www.w3.org/2000/svg"
-                                xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" x="0px" y="0px">
-                                <path d="M 900 365 L 900 0 L 548.7618 0 L 338 365 L 900 365 Z" fill="url(#pattern2r)" />
-                            </svg>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="slider__pagination">
-                    <a href="#slide-1" class="button">Slide 1</a>
-                    <a href="#slide-2" class="button">Slide 2</a>
-                </div>
-        </header>
-    </section>
+    <!-- 菜單 -->
+    <div id="menu" class="container-fluid">
+
+    </div>
 
 
-    <!-- food -->
-    <section id="food" class="my-5 py-5">
-        <div class="container">
-            <h1 class="mb-5">— Food</h1>
-            <div class="row mb-4">
-                <div class="col-lg-12 p-0">
-                    <div class="card bg-dark">
-                        <img src="food.jpg" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                          <h5 class="card-title">我是肉肉</h5>
-                          <p class="card-text">
-                            青山依舊在，幾度夕陽紅。慣看秋風春月。一壺濁酒喜
-                            相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝
-                            水，白髮漁樵江渚上，古今多少事，都付笑談中。
-                          </p>                      
-                        </div>
-                    </div>
-                </div>                                               
-            </div>
-            <div class="row">
-                <div class="col-lg-12 p-0">
-                    <div class="card bg-dark">
-                        <img src="food.jpg" class="card-img" alt="...">
-                        <div class="card-img-overlay">
-                          <h5 class="card-title">我是肉肉</h5>
-                          <p class="card-text">
-                            青山依舊在，幾度夕陽紅。慣看秋風春月。一壺濁酒喜
-                            相逢，浪花淘盡英雄。是非成敗轉頭空，滾滾長江東逝
-                            水，白髮漁樵江渚上，古今多少事，都付笑談中。
-                          </p>                      
-                        </div>
-                    </div>
-                </div>                
-            </div>
-        </div>
-    </section>
+    <!-- 關於 -->
+    <div id="about" class="container-fluid">
+
+    </div>
 
 
-    <!-- media -->
-    <section>
-        <div class="container">
-            <h1 class="mb-5">— MEDIA</h1>
-        </div>
-        <div class="container">
-            <div class="card-v">
-                <div class="card-play"></div>
-                <div class="card-video">
-                    <iframe id="video"
-                        src="https://www.youtube.com/embed/JE9z-gy4De4?enablejsapi=1&amp;html5=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0"
-                        frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-                </div>
-            </div>
-        </div>        
-    </section>
+    <!-- 食物 -->
+    <div id="food" class="container-fluid">
+
+    </div>
 
 
-    <!-- footer -->
-    <footer>
-        © 本網站僅供教學及練習使用，若有冒犯請洽0912-345678
-    </footer>
+    <!-- 媒體 -->
+    <div id="media" class="container-fluid">
+
+    </div>
 
 
-    <!-- jQueryCDN -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <!-- Popper.jsCDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <!-- BootstrapCDN -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
-    <!-- SwiperCDN -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.js"></script>
-    <!-- MediaCDN -->
-    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <!-- 頁尾 -->
+    <footer></footer>
 
 
-
-    <script id="rendered-js">
-        // ★ Swiper
-        var mySwiper = new Swiper('.swiper-container', {
-            initialSlide :0,
-            observer:true,//修改swiper自己或子元素時，自動初始化swiper
-            observeParents:true,//修改swiper的父元素時，自動初始化swiper
-            direction: 'horizontal', // 垂直切換選項
-            speed: 1000, // 切換速度
-            loop: true, // 循環模式選項
-
-            // 滾動效果
-            effect : 'coverflow', // 可設定為"fade"（淡入）"cube"（方塊）"coverflow"（3d流）"flip"（3d翻轉）
-            slidesPerView: 2, // 頁面數量
-            centeredSlides: true,
-            
-            coverflow: {
-                rotate: 30,
-                stretch: 10,
-                depth: 60,
-                modifier: 2,
-                slideShadows : true
-            },            
-        })
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
 
-        // ★ About
-        // Force redirect to anchor
-        window.location.href = "#slide-1";
+    <script>
 
-
-        // ★ Media
-        // Variables
-        var player,
-            card = document.querySelector('.card-v'),
-            play = document.querySelector('.card-play'),
-            video = document.querySelector('.card-video');
-
-        // Shine effect
-        card.onmousemove = function (e) {
-            const x = e.pageX - card.offsetLeft;
-            const y = e.pageY - card.offsetTop;
-
-            card.style.setProperty('--x', x + 'px');
-            card.style.setProperty('--y', y + 'px');
-        }
-
-        // Youtube API
-        function onYouTubePlayerAPIReady() {
-            player = new YT.Player('video', {
-                events: {
-                    'onReady': onPlayerReady
-                }
-            });
-        }
-
-        // Player Ready
-        function onPlayerReady(event) {
-            play.addEventListener('click', function () {
-                card.classList.add('video-is-open');
-                setTimeout(function () {
-                    video.style.display = 'block';
-                    player.playVideo();
-                }, 500);
-            });
-        }
-
-        // Inject YouTube API script
-        var tag = document.createElement('script');
-        tag.src = "//www.youtube.com/player_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-
-        
     </script>
 </body>
 </html>
