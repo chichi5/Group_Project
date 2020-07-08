@@ -1,9 +1,7 @@
-
-/* 食物 */
 #food {
     width: 100%;
     height: 100vh;
-    background-image: url(food-PC-bg.png);
+    background-image: url(//img/food/PC/food-PC-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
