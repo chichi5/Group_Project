@@ -1,5 +1,3 @@
-
-/* 食物 */
 #food {
     width: 100%;
     height: 100vh;
@@ -11,7 +9,7 @@
     display: flex;
 }
 
-#food .card-style{
+#food .card_style_t{
     width: 1050px;
     height: 519px;
     background-position: center;
@@ -19,7 +17,17 @@
     background-repeat: no-repeat;
     z-index: 1;
     display: none;
-}
+    }
+
+#food .card_style_b{
+    width: 1050px;
+    height: 519px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    display: none;
+    }
 
 .card-btns{
     width: 80px;
@@ -59,13 +67,13 @@
 }
 
 #b_card_1{
-        background-image: url('../img/food/PC/food-meat-au.png');
+    background-image: url('../img/food/PC/food-meat-au.png');
 }
 
 
-.card-style.active{
+#food .card_style_t.active{
     display: block;
 }
-.card-style.active{
+#food .card_style_b.active{
     display: block;
 }
