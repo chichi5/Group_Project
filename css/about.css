@@ -5,4 +5,14 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
+    flex-wrap:wrap ;
+}
+#sign{
+    position: relative;
+}
+
+.card-img-top{
+    position: absolute;
+    right: -25%;
 }
