@@ -40,60 +40,6 @@ body {
     background-position: center;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat:600");
-
-.header__main {
-    position: relative;
-    min-height: 100vh;
-    overflow: hidden;
-    text-align: left;
-}
-
-.slider {
-    width: 100vw;
-    height: 100vh;
-}
-
-.slide {
-    display: -webkit-box;
-    display: flex;
-    -webkit-box-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    align-items: center;
-    height: 100vh;
-    position: absolute;
-    width: 100%;
-}
-
-.slide__images {
-    position: relative;
-    width: 100%;
-    max-width: 900px;
-    height: 365px;
-    margin: 0 20px;
-}
-
-.slide__image {
-    position: absolute;
-    width: 100%;
-}
-
-.slide__image svg {
-    display: block;
-}
-
-.slide__image--left {
-    -webkit-transform: translate(0.75%, -10px);
-    transform: translate(0.75%, -10px);
-}
-
-.slide__image--right {
-    top: 5vmin;
-    -webkit-transform: translate(-0.75%, 10px);
-    transform: translate(-0.75%, 10px);
-}
-
 
 /* 食物 */
 #food {
