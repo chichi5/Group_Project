@@ -1,0 +1,3 @@
+banner title H1
+section title H2
+inside title H3
