@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +8,54 @@
 
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 
     <!-- CSS外連 -->
-    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="./css/basic.css">
+    <link rel="stylesheet" href="./css/banner.css">
+    <link rel="stylesheet" href="./css/menu.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="./css/food.css">
+    <link rel="stylesheet" href="./css/media.css">
+    <link rel="stylesheet" href="./css/footer.css">
 
 
     <style>
-        
+
     </style>
 </head>
+
 <body>
     <!-- 首頁 -->
-    <div id="home" class="container-fluid">
+    <div class="banner">
+        <div class="navbar">
+            <img class="logo" src="./img/banner/MeatGQ-LOGO.svg" alt="">
+            <ul class="navbtns">
+                <li class="btn">MENU</li>
+                <li class="btn">ABOUT</li>
+                <li class="btn">FOOD</li>
+                <li class="btn">MEDIA</li>
+                <li class="btn">INFO</li>
+            </ul>
+        </div>
+        <video id="smoke" src="./img/banner/smoke2.mp4" autoplay loop muted></video>
+        <div class="container">
+            <div class="l-ani">
+                <div class="mask"><video id="charcoal" src="./img/banner/charcoal.mp4" loop autoplay muted></video>
+                    <div class="mask1"><img id="grilled" src="./img/banner/grilled.png" alt=""></div>
+                    <div class="mask2"><img id="meat" src="./img/banner/meat.png" alt=""></div>
+                </div>
+            </div>
+            <div class="r-ani">
+                <img id="steak" src="./img/banner/菲力牛_1.png" alt="">
+            </div>
 
+        </div>
+        <div class="order">
+            <div class="order-btn"><p>線上訂位</p></div>
+        </div>
     </div>
 
 
@@ -90,13 +124,20 @@
 
 
     <!-- Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
 
 
     <script>
-        window.location.href="#about";
+        window.location.href = "#about";
     </script>
 </body>
+
 </html>
