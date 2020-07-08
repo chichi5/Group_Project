@@ -12,6 +12,10 @@
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 
+    <!-- Swiper CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.css" rel="stylesheet" />
+
+
     <!-- CSS外連 -->
     <link rel="stylesheet" href="./css/basic.css">
     <link rel="stylesheet" href="./css/banner.css">
@@ -74,11 +78,8 @@
 
 
     <!-- 關於 -->
-    <div id="about" class="container-fluid  d-flex align-items-center">
+    <div id="about" class="container-fluid">
 
-        <!-- <div class="container">   
-
-            <img src="/img/about/PC/about-present-PC.png" class="card-img-top" alt="">
         <div class="row">
             <div class="col-lg-3"></div>
             <div class="col-lg-1">
@@ -99,24 +100,7 @@
             <div class="col-lg-2">
                 <img src="/img/about/簽名-金色.png" class="card-img-top" alt="">
             </div>
-        </div> -->
-
-
-        <div class="container">
-            <div class="row">
-                <div class="col d-flex jutify-content-center">
-                    <img src="/img/about/PC/about-present-PC.png" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8"></div>
-                <div id="sign" class="col-lg-2">
-                    <img src="/img/about/簽名-金色.png" class="card-img-top" alt="">
-                </div>
-            </div>
         </div>
-        
-
     </div>
 
     <!-- 食物 -->
@@ -148,7 +132,24 @@
 
     <!-- 媒體 -->
     <div id="media" class="container-fluid">
-
+        <div class="media">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="bg_1 d-lg-block d-none"></div>
+                  <img src="/img/media/media-01.png" class="d-block w-100 d-lg-none" alt="...">
+                </div>
+                <div class="swiper-slide">
+                  <div class="bg_2 d-lg-block d-none"></div>
+                  <img src="/img/media/media-02.png" class="d-block w-100 d-lg-none" alt="...">
+                </div>
+                <div class="swiper-slide">
+                  <div class="bg_3 d-lg-block d-none"></div>
+                  <img src="/img/media/media-03.png" class="d-block w-100 d-lg-none" alt="...">
+                </div>
+              </div>      
+            </div>
+        </div>
     </div>
 
 
@@ -167,7 +168,35 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
         <script src="./script/food_card.js"></script>
+
+
+        <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.js"></script>
+
+
     <script>
+        // ★ Swiper
+        var mySwiper = new Swiper('.swiper-container', {
+            initialSlide :0,
+            observer:true,//修改swiper自己或子元素時，自動初始化swiper
+            observeParents:true,//修改swiper的父元素時，自動初始化swiper
+            direction: 'horizontal', // 垂直切換選項
+            speed: 1000, // 切換速度
+            loop: true, // 循環模式選項
+
+            // 滾動效果
+            effect : 'coverflow', // 可設定為"fade"（淡入）"cube"（方塊）"coverflow"（3d流）"flip"（3d翻轉）
+            slidesPerView: 2, // 頁面數量
+            centeredSlides: true,
+            
+            coverflow: {
+                rotate: 30,
+                stretch: 10,
+                depth: 60,
+                modifier: 2,
+                slideShadows : true
+            },            
+        })
     </script>
 </body>
 
