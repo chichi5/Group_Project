@@ -11,8 +11,3 @@
 #sign{
     position: relative;
 }
-
-.card-img-top{
-    position: absolute;
-    right: -25%;
-}
