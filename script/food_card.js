@@ -10,6 +10,10 @@ var bcards = document.querySelectorAll('.card_style_b')
 //大卡片宣告
 var fullcard = document.querySelectorAll('.card-area-style')
 
+//遮罩宣告
+
+var msk = document.querySelectorAll('.fdmusk')
+
 //酒卡按鈕控制酒卡分頁
 
 for (let i = 0; i < fctbtns.length; i++) {
@@ -75,3 +79,22 @@ function AllclearC() {
         fcard.classList.remove("active")
     }
 }
+
+//大卡遮罩
+
+    for (let i = 0; i < msk.length; i++) {
+        const musk = msk[i];
+        
+        musk.onmouseover = function(){ 
+            AllclearD()
+            musk.classList.add('active')
+        }
+    }
+    
+    function AllclearD() {
+        for (let i = 0; i < msk.length; i++) {
+            const musk = msk[i];
+    
+            musk.classList.remove("active")
+        }
+    }
