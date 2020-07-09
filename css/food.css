@@ -8,7 +8,6 @@
     position: relative;
     display: flex;
 }
-
 #food .card_style_t{
     width: 1050px;
     height: 519px;
@@ -18,7 +17,7 @@
     z-index: 1;
     display: none;
     }
-
+    
 #food .card_style_b{
     width: 1050px;
     height: 519px;
@@ -38,7 +37,8 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-}
+    padding: 180px 0;
+    }
 
 #card-btn-t{
     left: -50px;    
@@ -64,6 +64,26 @@
     position: absolute;
     display: flex;
     align-items:center;
+    }
+
+.fdmusk-t{
+    background-color: rgba(00, 00, 00, 0.7);
+    position: absolute;
+    top: 94px;
+    left: 217px;
+    width: 995px;
+    height: 464px;
+    z-index: 2;
+}
+
+.fdmusk-b{
+    background-color: rgba(00, 00, 00, 0.7);
+    position: absolute;
+    bottom: 94px;
+    right: 297px;
+    width: 995px;
+    height: 464px;
+    z-index: 2;
 }
 
 #t_card_1{
@@ -90,7 +110,6 @@
     background-image: url('../img/food/PC/food-meat-us_1.png');
 }
 
-
 #food .card_style_t.active{
     display: block;
 }
@@ -98,24 +117,41 @@
     display: block;
 }
 
-.fct_btn{
+#food .card-area-style.active{
+    z-index: 3;
+}
+
+
+.btn_area{
     width: 50px;
-    height: 50px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fct_btn{
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    background-color: black;
+    background-color: rgb(200, 200, 200);
 }
 
 .fcb_btn{
-    width: 50px;
-    height: 50px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    background-color: black;
+    background-color: rgb(200, 200, 200);
 }
 
-#food .card-btns .fct_btn.active{
-    background-color: blue;
+#food .card-btns .btn_area .fct_btn.active{
+    background-color: rgb(160, 160, 160);
+    width: 20px;
+    height: 20px;
 }
 
 #food .card-btns .fcb_btn.active{
-    background-color: blue;
+    background-color: rgb(160, 160, 160);
+    width: 20px;
+    height: 20px;
 }
