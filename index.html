@@ -18,6 +18,8 @@
     <link rel="stylesheet" href="./css/food.css">
     <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <!-- media_video CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
 
     <style>
@@ -130,20 +132,44 @@
             <div class="swiper-container">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <div class="bg_1 d-lg-block d-none"></div>
-                  <img src="/img/media/media-01.png" class="d-block w-100 d-lg-none" alt="...">
+                    <div class="card-v">
+                        <div class="card-play"></div>
+                        <div class="card-video">
+                            <iframe id="video"
+                                src="https://www.youtube.com/embed/DulmnDK2Du8?enablejsapi=1&amp;html5=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0"
+                                frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="swiper-slide">
-                  <div class="bg_2 d-lg-block d-none"></div>
-                  <img src="/img/media/media-02.png" class="d-block w-100 d-lg-none" alt="...">
+                    <div class="card-v">
+                        <div class="card-play"></div>
+                        <div class="card-video">
+                            <iframe id="video"
+                                src="https://www.youtube.com/embed/EqufxCa5g8c?enablejsapi=1&amp;html5=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0"
+                                frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                        </div>
+                    </div>
                 </div>
+
                 <div class="swiper-slide">
-                  <div class="bg_3 d-lg-block d-none"></div>
-                  <img src="/img/media/media-03.png" class="d-block w-100 d-lg-none" alt="...">
+                    <div class="card-v">
+                        <div class="card-play"></div>
+                        <div class="card-video">
+                            <iframe id="video"
+                                src="https://www.youtube.com/embed/kSLsF4xakTA?enablejsapi=1&amp;html5=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0"
+                                frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                        </div>
+                    </div>
                 </div>
-              </div>      
+              </div>
             </div>
         </div>
+
+        
+
+
     </div>
 
 
@@ -165,8 +191,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.js"></script>
     <!-- food_card 外連 -->
     <script src="./script/food_card.js"></script>
-    <!-- Swiper 外連 -->
+    <!-- media_swiper 外連 -->
     <script src="./script/media_swiper.js"></script>
+    <!-- media_video JS -->
+    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <!-- media_video 外連 -->
+    <script src="./script/media_video.js"></script>
 
 
     <script>
