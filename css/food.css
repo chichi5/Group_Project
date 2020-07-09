@@ -66,24 +66,30 @@
     align-items:center;
     }
 
-.fdmusk-t{
+#fdmusk-t{
     background-color: rgba(00, 00, 00, 0.7);
     position: absolute;
-    top: 94px;
-    left: 217px;
+    top: 10%;
+    left: 11.4%;
     width: 995px;
     height: 464px;
+}
+
+#fdmusk-b{
+    background-color: rgba(00, 00, 00, 0.7);
+    position: absolute;
+    bottom: 10%;
+    right: 15.7%;
+    width: 995px;
+    height: 464px;
+}
+
+.fdmusk{
     z-index: 2;
 }
 
-.fdmusk-b{
-    background-color: rgba(00, 00, 00, 0.7);
-    position: absolute;
-    bottom: 94px;
-    right: 297px;
-    width: 995px;
-    height: 464px;
-    z-index: 2;
+.fdmusk.active{
+    z-index: 0;
 }
 
 #t_card_1{
