@@ -5,14 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-
-
-    <!-- CSS外連 -->
+    <!-- Swiper CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.css" rel="stylesheet" />
+    <!-- CSS 外連 -->
     <link rel="stylesheet" href="./css/basic.css">
     <link rel="stylesheet" href="./css/banner.css">
     <link rel="stylesheet" href="./css/menu.css">
@@ -20,6 +18,8 @@
     <link rel="stylesheet" href="./css/food.css">
     <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/footer.css">
+    <!-- media_video CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
 
 
     <style>
@@ -64,7 +64,6 @@
     </nav>
 
 
-
     <!-- 菜單 -->
     <div id="menu" class="container-fluid">
         <!-- 暫存區塊可刪除 -->
@@ -74,11 +73,8 @@
 
 
     <!-- 關於 -->
-    <div id="about" class="container-fluid  d-flex align-items-center">
+    <div id="about" class="container-fluid">
 
-        <!-- <div class="container">   
-
-            <img src="/img/about/PC/about-present-PC.png" class="card-img-top" alt="">
         <div class="row">
             <div class="col-lg-3"></div>
             <div class="col-lg-1">
@@ -99,32 +95,16 @@
             <div class="col-lg-2">
                 <img src="/img/about/簽名-金色.png" class="card-img-top" alt="">
             </div>
-        </div> -->
-
-
-        <div class="container">
-            <div class="row">
-                <div class="col d-flex jutify-content-center">
-                    <img src="/img/about/PC/about-present-PC.png" alt="">
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-8"></div>
-                <div id="sign" class="col-lg-2">
-                    <img src="/img/about/簽名-金色.png" class="card-img-top" alt="">
-                </div>
-            </div>
         </div>
-        
-
     </div>
+
 
     <!-- 食物 -->
     <section>
         <div id="food" class="container-fluid">
             <div class="card-area-t card-area-style">
                 <div id="card-btn-t" class="card-btns">
-                    <div class="fct_btn active">1</div>
+                    <div class="fct_btn active"></div>
                     <div class="fct_btn"></div>
                     <div class="fct_btn"></div>
                 </div>
@@ -137,7 +117,7 @@
                 <div id="b_card_2" class="card_style_b"></div>
                 <div id="b_card_3" class="card_style_b"></div>
                 <div id="card-btn-b" class="card-btns">
-                    <div class="fcb_btn active">1</div>
+                    <div class="fcb_btn active"></div>
                     <div class="fcb_btn"></div>
                     <div class="fcb_btn"></div>
                 </div>
@@ -148,6 +128,47 @@
 
     <!-- 媒體 -->
     <div id="media" class="container-fluid">
+        <div class="media">
+            <div class="swiper-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card-v">
+                        <div class="card-play"></div>
+                        <div class="card-video">
+                            <iframe id="video"
+                                src="https://www.youtube.com/embed/DulmnDK2Du8?enablejsapi=1&amp;html5=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0"
+                                frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card-v">
+                        <div class="card-play"></div>
+                        <div class="card-video">
+                            <iframe id="video"
+                                src="https://www.youtube.com/embed/EqufxCa5g8c?enablejsapi=1&amp;html5=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0"
+                                frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card-v">
+                        <div class="card-play"></div>
+                        <div class="card-video">
+                            <iframe id="video"
+                                src="https://www.youtube.com/embed/kSLsF4xakTA?enablejsapi=1&amp;html5=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0"
+                                frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        
+
 
     </div>
 
@@ -166,7 +187,20 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.js"></script>
+    <!-- food_card 外連 -->
+    <script src="./script/food_card.js"></script>
+    <!-- media_swiper 外連 -->
+    <script src="./script/media_swiper.js"></script>
+    <!-- media_video JS -->
+    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <!-- media_video 外連 -->
+    <script src="./script/media_video.js"></script>
+
+
     <script>
+        
     </script>
 </body>
 

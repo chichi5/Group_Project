@@ -34,6 +34,10 @@
     height: 430px;
     background-color: white;
     position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 #card-btn-t{
@@ -66,8 +70,24 @@
     background-image: url('../img/food/PC/food-wine-champagne-2.png');
 }
 
+#t_card_2{
+    background-image: url('../img/food/PC/food-wine-brandy.png');
+}
+
+#t_card_3{
+    background-image: url('../img/food/PC/food-wine-red.png');
+}
+
 #b_card_1{
     background-image: url('../img/food/PC/food-meat-au.png');
+}
+
+#b_card_2{
+    background-image: url('../img/food/PC/food-meat-jp.png');
+}
+
+#b_card_3{
+    background-image: url('../img/food/PC/food-meat-us_1.png');
 }
 
 
@@ -76,4 +96,26 @@
 }
 #food .card_style_b.active{
     display: block;
+}
+
+.fct_btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+.fcb_btn{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: black;
+}
+
+#food .card-btns .fct_btn.active{
+    background-color: blue;
+}
+
+#food .card-btns .fcb_btn.active{
+    background-color: blue;
 }
