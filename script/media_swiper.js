@@ -7,14 +7,16 @@ var mySwiper = new Swiper('.swiper-container', {
     loop: true, // 循環模式選項
 
     // 滾動效果
-    effect : 'coverflow', // 可設定為"fade"（淡入）"cube"（方塊）"coverflow"（3d流）"flip"（3d翻轉）
+    effect: 'coverflow', // 可設定為"fade"（淡入）"cube"（方塊）"coverflow"（3d流）"flip"（3d翻轉）
     slidesPerView: 2, // 頁面數量
     centeredSlides: true,
+
 
     coverflow: {
         rotate: 0, // 滑動時旋轉角度
         stretch: 100, // 聚合寬度
         depth: 100, // 景深
+
         modifier: 1, // 覆蓋疊加層數
         slideShadows : false // 是否陰影
     }
