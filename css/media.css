@@ -9,7 +9,7 @@
 
 .media {
     width: 100%;
-    height: calc(100vh - 110px);
+    
   }
 
 .swiper-container {
@@ -17,126 +17,123 @@
     height: 100%;
 }
   
-.card-v,
-.card-w,
-.card-x {
-    width: 70vw;
-    height: calc(9/16 * 70vw);
-    max-width: calc(16/9 * 70vh);
-    max-height: 70vh;
-    display: -webkit-box;
-    display: flex;
-    position: relative;
-    border-radius: 6px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1613479/inception.jpg") center center/cover;
-    overflow: hidden;
-}
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800|Open+Sans+Condensed:300,700);
 
-.card-play-v,
-.card-play-w,
-.card-play-x {
-    width: 48px;
-    height: 48px;
-    position: relative;
-    z-index: 1;
-    margin: auto;
-    opacity: 0;
-    background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1613479/play.svg") center center/cover;
-    cursor: pointer;
-    -webkit-transition: opacity .3s ease-out;
-    transition: opacity .3s ease-out;
-}
+        .bg1 {
+            background-image: url(/img/media/media-02.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
 
-.card-play-v:after,
-.card-play-w:after,
-.card-play-x:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    border-radius: 50%;
-    background: #000;
-    -webkit-transition: all .5s ease-out;
-    transition: all .5s ease-out;
-}
+        .bg2 {
+            background-image: url(/img/media/media-03.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
 
-.card-video-v,
-.card-video-w,
-.card-video-x {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 2;
-    background: #000;
-}
+        .bg3 {
+            background-image: url(/img/media/media-01.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }        
 
-.card-video-v iframe,
-.card-video-w iframe,
-.card-video-x iframe {
-    width: 100%;
-    height: 100%;
-}
+        .lightbox-thumb {
+            position: relative;
+            /* max-width: 500px; */            
+            width: 100%;
+            height: 500px;
+            overflow: hidden;
+            transition: background-size 0.3s ease-in-out;
+            z-index: 1;
+            display: inline-block;
+        }
 
-.card-v:after,
-.card-w:after,
-.card-x:after {
-    content: '';
-    width: 250%;
-    height: 250%;
-    position: absolute;
-    top: var(--y);
-    left: var(--x);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    background: radial-gradient(circle closest-side, rgba(255, 255, 255, 0.3), transparent);
-    -webkit-transition: opacity 0.5s ease-out;
-    transition: opacity 0.5s ease-out;
-}
+        .lightbox-thumb:hover {
+            background-size: 100%;
+        }
 
+        .lightbox-thumb:hover .lightbox-thumb-details {
+            opacity: 1;
+            transform: scale(1);
+        }
 
-.card-v:hover:after,
-.card-v:hover .card-play-v {
-    opacity: 1;
-}
+        .lightbox-thumb .lightbox-thumb-details {
+            width: 100%;
+            height: 100%;
+            background: rgba(20, 20, 20, 0.85);
+            color: white;
+            padding: 5px;
+            text-align: center;
+            opacity: 0;
+            transform: scale(1.2);
+            transform-origin: center;
+            transition: all 0.3s ease-in-out;
+            display: flex;
+        }
 
-.card-w:hover:after,
-.card-w:hover .card-play-w {
-    opacity: 1;
-}
+        .lightbox-thumb .lightbox-thumb-details .lightbox-button {
+            background: white;
+            display: inline-block;
+            padding: 30px 30px;
+            margin: auto;
+            cursor: pointer;            
+            border-radius: 100%;
+            background-image: url("/img/media/play-icon.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
 
-.card-x:hover:after,
-.card-x:hover .card-play-x {
-    opacity: 1;
-}
+        .lightbox-thumb .lightbox-thumb-details .lightbox-video-details {
+            font-size: 0.9rem;
+        }
 
-.video-is-open-v:after,
-.video-is-open-w:after,
-.video-is-open-x:after {
-    display: none;
-}
+        .lightbox {
+            width: 100%;
+            height: 100%;
+            background: rgba(20, 20, 20, 0.8);
+            position: fixed;
+            top: 0;
+            left: 0;
+            display: table;
+            opacity: 0;
+            z-index: 100;
+        }
 
-.video-is-open-v .card-play-v,
-.video-is-open-w .card-play-w,
-.video-is-open-x .card-play-x {
-    opacity: 1;
-}
+        .lightbox .lightbox-inner {
+            display: table-cell;
+            width: 100%;
+            height: 100%;
+            vertical-align: middle;
+            text-align: center;
+        }
 
-.video-is-open-v .card-play-v:after,
-.video-is-open-w .card-play-w:after,
-.video-is-open-x .card-play-x:after {
-    width: 2vh;
-    height: 2vh;
-    -webkit-transform: translate(-50%, -50%) scale(88.8888888889);
-    transform: translate(-50%, -50%) scale(88.8888888889);
-    -webkit-transition: -webkit-transform .5s ease-out;
-    transition: -webkit-transform .5s ease-out;
-    transition: transform .5s ease-out;
-    transition: transform .5s ease-out, -webkit-transform .5s ease-out;
-}
+        .lightbox .lb-content {
+            padding: 10px;
+            height: auto;
+            margin: auto;
+            max-width: 1200px;
+            color: black;
+            text-align: center;
+        }
+
+        .lightbox .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 */
+            padding-top: 25px;
+            height: 0;
+            border-radius: 5px;
+            background: white;
+        }
+
+        .lightbox .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }

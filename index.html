@@ -255,46 +255,42 @@
     <div id="media" class="container-fluid">
         <div class="media">
             <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="card-v">
-                            <div class="card-play-v"></div>
-                            <div class="card-video-v">
-                                <iframe id="video-v"
-                                    src="https://www.youtube.com/embed/DulmnDK2Du8?enablejsapi=1&amp;html5=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0"
-                                    frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="card-w">
-                            <div class="card-play-w"></div>
-                            <div class="card-video-w">
-                                <iframe id="video-w"
-                                    src="https://www.youtube.com/embed/EqufxCa5g8c?enablejsapi=1&amp;html5=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0"
-                                    frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <div class="card-x">
-                            <div class="card-play-x"></div>
-                            <div class="card-video-x">
-                                <iframe id="video-x"
-                                    src="https://www.youtube.com/embed/kSLsF4xakTA?enablejsapi=1&amp;html5=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0"
-                                    frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-                            </div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="lightbox-thumb bg1"
+                        data-lb-content="https://www.youtube.com/embed/kSLsF4xakTA?rel=0&hd=1&output=embed&autoplay=1"
+                        data-lb-content-type="video">                        
+                        <div class="lightbox-thumb-details">                            
+                            <div class="lightbox-button"></div>
+                            <div class="lightbox-video-details"></div>
                         </div>
                     </div>
                 </div>
+
+                <div class="swiper-slide">
+                    <div class="lightbox-thumb bg2"
+                        data-lb-content="https://www.youtube.com/embed/EqufxCa5g8c?rel=0&hd=1&output=embed&autoplay=1"
+                        data-lb-content-type="video">
+                        <div class="lightbox-thumb-details">
+                            <div class="lightbox-button"></div>
+                            <div class="lightbox-video-details"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="lightbox-thumb bg3"
+                        data-lb-content="https://www.youtube.com/embed/hHQX9mrkAMY?rel=0&hd=1&output=embed&autoplay=1"
+                        data-lb-content-type="video">
+                        <div class="lightbox-thumb-details">
+                            <div class="lightbox-button"></div>
+                            <div class="lightbox-video-details"></div>
+                        </div>
+                    </div>
+                </div>
+              </div>
             </div>
         </div>
-
-
-
-
     </div>
 
 
@@ -325,17 +321,18 @@
     <script src="./script/food_card.js"></script>
 
 
+
+    <!-- Lightbox JS -->
+    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <!-- Swiper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.js"></script>
     <!-- food_card 外連 -->
     <script src="./script/food_card.js"></script>
     <!-- media_swiper 外連 -->
-    <script src="./script/media_swiper.js"></script>
-    <!-- media_video JS -->
-    <script
-        src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
-    <!-- media_video 外連 -->
-    <script src="./script/media_video.js"></script>
+    <script src="./script/media_swiper.js"></script>    
+    <!-- media_lightbox 外連 -->
+    <script src="./script/media_lightbox.js"></script>
 
 
 
