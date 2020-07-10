@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    
+    
+    <title>倒影測試</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+            height: 100vh;
+            background: black;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-perspective: 1000px;
+            perspective: 1000px;
+        }
+
+        @-webkit-keyframes shift {
+            from {
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+
+            to {
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+        }
+
+        @keyframes shift {
+            from {
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+
+            to {
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+        }
+
+        .posters {
+            display: -webkit-box;
+            display: flex;
+            -webkit-box-pack: center;
+            justify-content: center;
+            -webkit-box-align: center;
+            align-items: center;
+        }
+
+        .poster {
+            display: absolute;
+            top: 0;
+            left: 0;
+            height: 250px;
+            width: 250px;
+            margin-right: 10px;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+
+        .poster img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .poster .source {
+            position: absolute;
+            top: 0;
+            -webkit-transition: 0.3s all;
+            transition: 0.3s all;
+        }
+
+        .poster .reflection,
+        .poster::after {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+        }
+
+        .poster .reflection {
+            opacity: 0.5;
+            -webkit-transform: rotateX(180deg);
+            transform: rotateX(180deg);
+        }
+
+        .poster::after {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(75%, black), to(transparent));
+            background: linear-gradient(black 75%, transparent);
+            -webkit-transform-origin: bottom center;
+            transform-origin: bottom center;
+            -webkit-transform: scale(1.1) rotateX(180deg);
+            transform: scale(1.1) rotateX(180deg);
+        }
+
+        a {
+            position: absolute;
+            z-index: 1;
+            width: 32px;
+            height: 32px;
+            left: 25px;
+            top: 25px;
+        }
+
+        a img {
+            width: 100%;
+            height: 100%;
+            -webkit-animation: 5s pop infinite;
+            animation: 5s pop infinite;
+        }
+
+        @-webkit-keyframes pop {
+            0% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+
+            10% {
+                -webkit-transform: scale(1.5);
+                transform: scale(1.5);
+            }
+
+            20% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+
+        @keyframes pop {
+            0% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+
+            10% {
+                -webkit-transform: scale(1.5);
+                transform: scale(1.5);
+            }
+
+            20% {
+                -webkit-transform: scale(1);
+                transform: scale(1);
+            }
+        }
+    </style>
+    <script>
+        window.console = window.console || function (t) { };
+    </script>
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+            window.parent.postMessage("resize", "*");
+        }
+    </script>
+</head>
+
+<body translate="no">
+    <!-- <a target="_blank" href="https://twitter.com/ReisnerShawn"><img class="social" -->
+            <!-- src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png" /></a> -->
+            
+    <div class="posters">
+        <div class="poster"><img class="source"
+                src="https://www.teepr.com/wp-content/uploads/2019/12/mikimikan_70842052_179414713224426_4817884804378941531_n.jpg" />
+                            <img class="reflection"
+                src="https://www.teepr.com/wp-content/uploads/2019/12/mikimikan_70842052_179414713224426_4817884804378941531_n.jpg" /></div>
+
+        <div class="poster"><img class="source"
+                src="https://www.teepr.com/wp-content/uploads/2019/12/mikimikan_70842052_179414713224426_4817884804378941531_n.jpg" />
+                            <img class="reflection"
+                src="https://www.teepr.com/wp-content/uploads/2019/12/mikimikan_70842052_179414713224426_4817884804378941531_n.jpg" /></div>
+
+        <div class="poster"><img class="source"
+                src="https://www.teepr.com/wp-content/uploads/2019/12/mikimikan_70842052_179414713224426_4817884804378941531_n.jpg" />
+                            <img class="reflection"
+                src="https://www.teepr.com/wp-content/uploads/2019/12/mikimikan_70842052_179414713224426_4817884804378941531_n.jpg" /></div>
+
+        <div class="poster"><img class="source"
+                src="https://www.teepr.com/wp-content/uploads/2019/12/mikimikan_70842052_179414713224426_4817884804378941531_n.jpg" />
+                            <img class="reflection"
+                src="https://www.teepr.com/wp-content/uploads/2019/12/mikimikan_70842052_179414713224426_4817884804378941531_n.jpg" /></div>
+    </div>
+</body>
+
+</html>
