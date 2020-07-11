@@ -1,0 +1,44 @@
+.banner_meat {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url('/img/pagination/meat/au/pagination-meat-banner-au.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+}
+
+.banner_meat::-webkit-scrollbar {
+    display: none;
+}
+
+.banner_meat .logo {
+    width: 117px;
+    z-index: 2;
+}
+
+.banner_meat .navbtns {
+    display: flex;
+    width: 600px;
+    justify-content: space-between;
+    padding: 0 100px 0 0;
+}
+
+.banner_meat .navbtns .btn {
+    color: white;
+    font-size: 25px;
+    font-weight: 100;
+    z-index: 2;
+    list-style-type: none;
+}
+
+#tab_au_meat {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/img/pagination/bg/pagination-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
