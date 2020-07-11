@@ -10,6 +10,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!-- Nav CSS -->
+    <link rel="stylesheet" href="./css/nav.css">
     <!-- Swiper CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/css/swiper.css" rel="stylesheet" />
     <!-- CSS 外連 -->
@@ -38,6 +40,39 @@
     <!-- 首頁 -->
     <nav>
         <div class="banner">
+            <!-- 漢堡條 -->
+            <div class="menu_hamburger">
+                <label class="toggle">
+                    <input id="onoffswitch" type="checkbox" class=" active">
+                    <div>
+                        <div>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <svg>
+                            <use xlink:href="#path">
+                        </svg>
+                        <svg>
+                            <use xlink:href="#path">
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" id="path">
+                    <path d="M22,22 L2,22 C2,11 11,2 22,2 C33,2 42,11 42,22"></path>
+                </symbol>
+            </svg>
+            <div class="navbtns_hamburger">
+                <ul class="navbtns_btn">
+                    <li class="btn">MENU</li>
+                    <li class="btn">ABOUT</li>
+                    <li class="btn">FOOD</li>
+                    <li class="btn">MEDIA</li>
+                    <li class="btn">INFO</li>
+                </ul>
+            </div>
+            
             <div class="navbar">
                 <img class="logo" src="./img/banner/MeatGQ-LOGO.svg" alt="">
                 <ul class="navbtns">
@@ -48,6 +83,7 @@
                     <li class="btn">INFO</li>
                 </ul>
             </div>
+
             <video id="smoke" src="./img/banner/smoke2.mp4" autoplay loop muted></video>
             <div class="container">
                 <div class="l-ani">
@@ -74,9 +110,6 @@
     <!-- 菜單 -->
     <section id="menu" class="container-fluid">
         <div id="canvas">
-
-            <div class="zoom-icon zoom-icon-in"></div>
-
             <div class="magazine-viewport">
                 <div class="container">
                     <div class="magazine">
@@ -184,64 +217,19 @@
                         <div class="fct_btn"></div>
                     </div>
                 </div>
-                <div id="t_card_1" class="card_style_t active">
-                    <div class="card-t-text-champagne"></div>
-                    <div class="TinC-t">
-                        <h3>酩悅香檳</h3>
-                        <h4>Moet et Chandon</h4>
-                        <p>在味蕾表現非常性感，濃郁又滑順的口感，圓潤細緻的境界，最後帶有清新爽口的感覺，達到將香檳最完美平衡的境界。由開胃菜到甜品，法國酩悅香檳都是完美的配合。非常適合搭配：生魚片與殼類海鮮，烘烤或些許調味的肉類，<a class="more"
-                                href="">more</a></p>
-                    </div>
-                </div>
-                <div id="t_card_2" class="card_style_t">
-                    <div class="card-t-text"></div>
-                    <div class="TinC-t">
-                        <h3>坎帕羅拉 亞曼柔妮</h3>
-                        <h4> Campagnola Grappa di Amarone</h4>
-                        <p>色澤透明純淨，散發出優雅細緻的果香，入口平衡和諧，口味甘洌，醇美無瑕，餘香縈繞不散。<a class="more"
-                                href="">more</a></p>
-                    </div>
-                </div>
-                <div id="t_card_3" class="card_style_t">
-                    <div class="card-t-text"></div>
-                    <div class="TinC-t">
-                        <h3>克勒雷登山 ‧ 莊園 希哈紅酒</h3>
-                        <h4>Clarendon Hills Domaine Syrah</h4>
-                        <p>深沉鮮紅，些許紫羅蘭光暈，多層次且富含礦物感。口感光滑圓潤，酒體適中，竄流著黑醋栗與玫瑰花瓣風味。粗啜或許誤判為甜美細緻的風格，帶清新明亮的酸度。<a class="more"
-                                href="">more</a></p>
-                    </div>
-                </div>
+                <div id="t_card_1" class="card_style_t active"></div>
+                <div id="t_card_2" class="card_style_t"></div>
+                <div id="t_card_3" class="card_style_t"></div>
             </div>
 
             <!-- 肉卡 -->
             <div class="card-area-b card-area-style">
                 <div id="b_card_1" class="card_style_b active">
-                    <div class="card-b-text"></div>
-                    <div class="TinC-b">
-                        <h3>澳洲7+和牛肋眼牛排</h3>
-                        <h4>Australia wagyu beef ribeye rank 7+ steak</h4>
-                        <p>對於澳洲和牛來講，其實是不需要用任何調味料提前醃製或者醬汁，可以用海鹽和黑胡椒調味，享受澳洲和牛最原始的味道，體會它的原汁鮮美，品嘗來自大自然的饋贈。<a class="more"
-                                href="">more</a></p>
-                    </div>
+                    <div class="card-t-text"></div>
+                    <div class="tt">123123</div>
                 </div>
-                <div id="b_card_2" class="card_style_b">
-                    <div class="card-b-text"></div>
-                    <div class="TinC-b">
-                        <h3>日本A4和牛牛排</h3>
-                        <h4>Japanese wagyu beef rank A4 steak</h4>
-                        <p>關於日本和牛，是指經過品種改良，由於血統及飼養方式與其他地區、品種的牛隻有別，因此形成獨特的風味。其肉中的不飽和脂肪酸較高、油花分布均勻，口感極好，入口即化，一般牛肉難以望其項背。<a
-                                class="more" href="">more</a></p>
-                    </div>
-                </div>
-                <div id="b_card_3" class="card_style_b">
-                    <div class="card-b-text"></div>
-                    <div class="TinC-b">
-                        <h3>美國頂級老饕牛排</h3>
-                        <h4>American ribeye cap steak</h4>
-                        <p>傳奇的老饕牛排看起來像蓋子，也被稱為「上蓋肉」。它兼具嫩度和油花，風味十足。一頭牛只能做十二份八盎司的老饕牛排。烤的方式有點像洗三溫暖，讓牛肉歷經不同的溫度。<a
-                                class="more" href="">more</a></p>
-                    </div>
-                </div>
+                <div id="b_card_2" class="card_style_b"></div>
+                <div id="b_card_3" class="card_style_b"></div>
                 <div id="card-btn-b" class="card-btns">
                     <div class="btn_area">
                         <div class="fcb_btn active"></div>
@@ -261,43 +249,42 @@
     <div id="media" class="container-fluid">
         <div class="media">
             <div class="swiper-container">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <div class="lightbox-thumb bg1"
-                        data-lb-content="https://www.youtube.com/embed/kSLsF4xakTA?rel=0&hd=1&output=embed&autoplay=1"
-                        data-lb-content-type="video">                        
-                        <div class="lightbox-thumb-details">                            
-                            <div class="lightbox-button"></div>
-                            <div class="lightbox-video-details"></div>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="card-v">
+                            <div class="card-play-v"></div>
+                            <div class="card-video-v">
+                                <iframe id="video-v"
+                                    src="https://www.youtube.com/embed/DulmnDK2Du8?enablejsapi=1&amp;html5=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0"
+                                    frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="swiper-slide">
-                    <div class="lightbox-thumb bg2"
-                        data-lb-content="https://www.youtube.com/embed/EqufxCa5g8c?rel=0&hd=1&output=embed&autoplay=1"
-                        data-lb-content-type="video">
-                        <div class="lightbox-thumb-details">
-                            <div class="lightbox-button"></div>
-                            <div class="lightbox-video-details"></div>
+                    <div class="swiper-slide">
+                        <div class="card-w">
+                            <div class="card-play-w"></div>
+                            <div class="card-video-w">
+                                <iframe id="video-w"
+                                    src="https://www.youtube.com/embed/EqufxCa5g8c?enablejsapi=1&amp;html5=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0"
+                                    frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="swiper-slide">
-                    <div class="lightbox-thumb bg3"
-                        data-lb-content="https://www.youtube.com/embed/hHQX9mrkAMY?rel=0&hd=1&output=embed&autoplay=1"
-                        data-lb-content-type="video">
-                        <div class="lightbox-thumb-details">
-                            <div class="lightbox-button"></div>
-                            <div class="lightbox-video-details"></div>
+                    <div class="swiper-slide">
+                        <div class="card-x">
+                            <div class="card-play-x"></div>
+                            <div class="card-video-x">
+                                <iframe id="video-x"
+                                    src="https://www.youtube.com/embed/kSLsF4xakTA?enablejsapi=1&amp;html5=1&amp;iv_load_policy=3&amp;rel=0&amp;showinfo=0"
+                                    frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
-              </div>
             </div>
         </div>
-    </div>
 
 
     <!-- 頁尾 -->
@@ -325,14 +312,11 @@
         </div>
     </footer>
 
+    </div>
 
-    <!-- menu JS -->
-    <!-- <script type="text/javascript" src="./book/extras/jquery.min.1.7.js"></script> -->
-    <!-- <script type="text/javascript" src="./extras/modernizr.2.5.3.min.js"></script> -->
-    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/modernizr@3.11.3/lib/cli.min.js"></script>
-    <script type="text/javascript" src="./book/lib/hash.js"></script>
-    <script type="text/javascript" src="./book/js/magazine.js"></script> -->
 
+    <!-- 頁尾 -->
+    <footer></footer>
     <!-- Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
@@ -344,430 +328,33 @@
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
         crossorigin="anonymous"></script>
 
+    <!-- nav JS -->
+    <script src="./script/nav.js"></script>
+
+    <!-- menu book JS -->
+    <script type="text/javascript" src="./book/extras/jquery.min.1.7.js"></script>
+    <script type="text/javascript" src="./book/extras/modernizr.2.5.3.min.js"></script>
+    <script type="text/javascript" src="./book/lib/hash.js"></script>
+    <script type="text/javascript" src="./script/menu_book.js"></script>
+
     <!-- food card js -->
 
     <script src="./script/food_card.js"></script>
 
-
-
-    <!-- Lightbox JS -->
-    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
     <!-- Swiper JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.1.0/js/swiper.js"></script>
     <!-- food_card 外連 -->
     <script src="./script/food_card.js"></script>
     <!-- media_swiper 外連 -->
-    <script src="./script/media_swiper.js"></script>    
-    <!-- media_lightbox 外連 -->
-    <script src="./script/media_lightbox.js"></script>
+    <script src="./script/media_swiper.js"></script>
+    <!-- media_video JS -->
+    <script
+        src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-157cd5b220a5c80d4ff8e0e70ac069bffd87a61252088146915e8726e5d9f147.js"></script>
+    <!-- media_video 外連 -->
+    <script src="./script/media_video.js"></script>
 
 
 
-    <script type="text/javascript" src="./book/extras/jquery.min.1.7.js"></script>
-    <script type="text/javascript" src="./book/extras/modernizr.2.5.3.min.js"></script>
-    <script type="text/javascript" src="./book/lib/hash.js"></script>
-    <script type="text/javascript">
-        // var reg = document.querySelectorAll('.region')
-
-        // function unregion() {
-        // 	reg.addClass("none");	
-        // }
-        // console.log(reg);
-
-        function loadApp() {
-
-            $('#canvas').fadeIn(1000);
-
-            var flipbook = $('.magazine');
-
-            // Check if the CSS was already loaded
-
-            if (flipbook.width() == 0 || flipbook.height() == 0) {
-                setTimeout(loadApp, 10);
-                return;
-            }
-
-            // Create the flipbook
-
-            flipbook.turn({
-
-                // Magazine width
-
-                width: 922,
-
-                // Magazine height
-
-                height: 600,
-
-                // Duration in millisecond
-
-                duration: 1000,
-
-                // Hardware acceleration
-
-                acceleration: !isChrome(),
-
-                // Enables gradients
-
-                gradients: true,
-
-                // Auto center this flipbook
-
-                autoCenter: true,
-
-                // Elevation from the edge of the flipbook when turning a page
-
-                elevation: 50,
-
-                // The number of pages
-                // 頁數設定
-                pages: 8,
-
-                // Events
-
-                when: {
-                    turning: function (event, page, view) {
-
-                        var book = $(this),
-                            currentPage = book.turn('page'),
-                            pages = book.turn('pages');
-
-                        // Update the current URI
-
-                        Hash.go('page/' + page).update();
-
-                        // Show and hide navigation buttons
-
-                        disableControls(page);
-
-
-                        $('.thumbnails .page-' + currentPage).
-                            parent().
-                            removeClass('current');
-
-                        $('.thumbnails .page-' + page).
-                            parent().
-                            addClass('current');
-
-
-
-                    },
-
-                    turned: function (event, page, view) {
-
-                        disableControls(page);
-
-                        $(this).turn('center');
-
-                        if (page == 1) {
-                            $(this).turn('peel', 'br');
-                        }
-
-                    },
-
-                    missing: function (event, pages) {
-
-                        // Add pages that aren't in the magazine
-
-                        for (var i = 0; i < pages.length; i++)
-                            addPage(pages[i], $(this));
-
-
-                    }
-                }
-
-            });
-
-            // Zoom.js
-
-            $('.magazine-viewport').zoom({
-                flipbook: $('.magazine'),
-
-                max: function () {
-
-                    return largeMagazineWidth() / $('.magazine').width();
-
-                },
-
-                when: {
-
-                    swipeLeft: function () {
-
-                        $(this).zoom('flipbook').turn('next');
-
-                    },
-
-                    swipeRight: function () {
-
-                        $(this).zoom('flipbook').turn('previous');
-
-                    },
-
-                    resize: function (event, scale, page, pageElement) {
-
-                        if (scale == 1)
-                            loadSmallPage(page, pageElement);
-                        else
-                            loadLargePage(page, pageElement);
-
-                    },
-
-                    zoomIn: function () {
-
-                        $('.thumbnails').hide();
-                        $('.made').hide();
-                        $('.magazine').removeClass('animated').addClass('zoom-in');
-                        $('.zoom-icon').removeClass('zoom-icon-in').addClass('zoom-icon-out');
-
-                        if (!window.escTip && !$.isTouch) {
-                            escTip = true;
-
-                            $('<div />', { 'class': 'exit-message' }).
-                                html('<div>Press ESC to exit</div>').
-                                appendTo($('body')).
-                                delay(2000).
-                                animate({ opacity: 0 }, 500, function () {
-                                    $(this).remove();
-                                }
-                                );
-                        }
-                    },
-
-                    zoomOut: function () {
-
-                        $('.exit-message').hide();
-                        $('.thumbnails').fadeIn();
-                        $('.made').fadeIn();
-                        $('.zoom-icon').removeClass('zoom-icon-out').addClass('zoom-icon-in');
-
-                        setTimeout(function () {
-                            $('.magazine').addClass('animated').removeClass('zoom-in');
-                            resizeViewport();
-                        }, 0);
-
-                    }
-                }
-            });
-
-            // Zoom event
-
-            if ($.isTouch)
-                $('.magazine-viewport').bind('zoom.doubleTap', zoomTo);
-            else
-                $('.magazine-viewport').bind('zoom.tap', zoomTo);
-
-
-            // Using arrow keys to turn the page
-
-            $(document).keydown(function (e) {
-
-                var previous = 37, next = 39, esc = 27;
-
-                switch (e.keyCode) {
-                    case previous:
-
-                        // left arrow
-                        $('.magazine').turn('previous');
-                        e.preventDefault();
-
-                        break;
-                    case next:
-
-                        //right arrow
-                        $('.magazine').turn('next');
-                        e.preventDefault();
-
-                        break;
-                    case esc:
-
-                        $('.magazine-viewport').zoom('zoomOut');
-                        e.preventDefault();
-
-                        break;
-                }
-            });
-
-            // URIs - Format #/page/1 
-
-            Hash.on('^page\/([0-9]*)$', {
-                yep: function (path, parts) {
-                    var page = parts[1];
-
-                    if (page !== undefined) {
-                        if ($('.magazine').turn('is'))
-                            $('.magazine').turn('page', page);
-                    }
-
-                },
-                nop: function (path) {
-
-                    if ($('.magazine').turn('is'))
-                        $('.magazine').turn('page', 1);
-                }
-            });
-
-
-            $(window).resize(function () {
-                resizeViewport();
-            }).bind('orientationchange', function () {
-                resizeViewport();
-            });
-
-            // Events for thumbnails
-
-            $('.thumbnails').click(function (event) {
-
-                var page;
-
-                if (event.target && (page = /page-([0-9]+)/.exec($(event.target).attr('class')))) {
-
-                    $('.magazine').turn('page', page[1]);
-                }
-            });
-
-            $('.thumbnails li').
-                bind($.mouseEvents.over, function () {
-
-                    $(this).addClass('thumb-hover');
-
-                }).bind($.mouseEvents.out, function () {
-
-                    $(this).removeClass('thumb-hover');
-
-                });
-
-            if ($.isTouch) {
-
-                $('.thumbnails').
-                    addClass('thumbanils-touch').
-                    bind($.mouseEvents.move, function (event) {
-                        event.preventDefault();
-                    });
-
-            } else {
-
-                $('.thumbnails ul').mouseover(function () {
-
-                    $('.thumbnails').addClass('thumbnails-hover');
-
-                }).mousedown(function () {
-
-                    return false;
-
-                }).mouseout(function () {
-
-                    $('.thumbnails').removeClass('thumbnails-hover');
-
-                });
-
-            }
-
-
-            // Regions
-
-            if ($.isTouch) {
-                $('.magazine').bind('touchstart', regionClick);
-            } else {
-                $('.magazine').click(regionClick);
-            }
-
-            // Events for the next button
-
-            $('.next-button').bind($.mouseEvents.over, function () {
-
-                $(this).addClass('next-button-hover');
-
-            }).bind($.mouseEvents.out, function () {
-
-                $(this).removeClass('next-button-hover');
-
-            }).bind($.mouseEvents.down, function () {
-
-                $(this).addClass('next-button-down');
-
-            }).bind($.mouseEvents.up, function () {
-
-                $(this).removeClass('next-button-down');
-
-            }).click(function () {
-
-                $('.magazine').turn('next');
-
-            });
-
-            // Events for the next button
-
-            $('.previous-button').bind($.mouseEvents.over, function () {
-
-                $(this).addClass('previous-button-hover');
-
-            }).bind($.mouseEvents.out, function () {
-
-                $(this).removeClass('previous-button-hover');
-
-            }).bind($.mouseEvents.down, function () {
-
-                $(this).addClass('previous-button-down');
-
-            }).bind($.mouseEvents.up, function () {
-
-                $(this).removeClass('previous-button-down');
-
-            }).click(function () {
-
-                $('.magazine').turn('previous');
-
-            });
-
-
-            resizeViewport();
-
-            $('.magazine').addClass('animated');
-
-        }
-
-        // Zoom icon
-
-        $('.zoom-icon').bind('mouseover', function () {
-
-            if ($(this).hasClass('zoom-icon-in'))
-                $(this).addClass('zoom-icon-in-hover');
-
-            if ($(this).hasClass('zoom-icon-out'))
-                $(this).addClass('zoom-icon-out-hover');
-
-        }).bind('mouseout', function () {
-
-            if ($(this).hasClass('zoom-icon-in'))
-                $(this).removeClass('zoom-icon-in-hover');
-
-            if ($(this).hasClass('zoom-icon-out'))
-                $(this).removeClass('zoom-icon-out-hover');
-
-        }).bind('click', function () {
-
-            if ($(this).hasClass('zoom-icon-in'))
-                $('.magazine-viewport').zoom('zoomIn');
-            else if ($(this).hasClass('zoom-icon-out'))
-                $('.magazine-viewport').zoom('zoomOut');
-
-        });
-
-        $('#canvas').hide();
-
-
-        // Load the HTML4 version if there's not CSS transform
-
-        yepnope({
-            test: Modernizr.csstransforms,
-            yep: ['./book/lib/turn.js'],
-            nope: ['./book/lib/turn.html4.min.js'],
-            both: ['./book/lib/zoom.min.js', './book/js/magazine.js', './book/css/magazine.css'],
-            complete: loadApp
-        });
-
-    </script>
 
 </body>
 
