@@ -11,8 +11,7 @@ var mySwiper = new Swiper('.swiper-container', {
     slidesPerView: 2, // 頁面數量
     centeredSlides: true,
 
-
-    coverflow: {
+    coverflowEffect: {
         rotate: 0, // 滑動時旋轉角度
         stretch: 100, // 聚合寬度
         depth: 100, // 景深
