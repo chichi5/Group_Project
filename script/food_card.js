@@ -20,7 +20,7 @@ for (let i = 0; i < fctbtns.length; i++) {
     const fctbtn = fctbtns[i];
     const tcard = tcards[i];
     
-    fctbtn.onclick = function(){
+    fctbtn.onmouseover = function(){
         AllclearT()
 
         fctbtn.classList.add('active')
@@ -44,7 +44,7 @@ for (let i = 0; i < fcbbtns.length; i++) {
     const fcbbtn = fcbbtns[i];
     const bcard = bcards[i];
     
-    fcbbtn.onclick = function(){
+    fcbbtn.onmouseover = function(){
         AllclearB()
 
         fcbbtn.classList.add('active')
