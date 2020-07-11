@@ -180,7 +180,8 @@
     background-color: rgba(00, 00, 00, 0.7);
     position: absolute;
     bottom: 5.4%;
-    right: 14.2%;
+    /* right: 14.2%; */
+    right: calc(10% + 80px);
     width: 1050px;
     height: 520px;
 }
