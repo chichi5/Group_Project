@@ -3,7 +3,6 @@ var toggle = document.querySelector('.toggle input')
         $(".toggle input").on('click', function () {
             var animate = setInterval(() => {
                 toggle.checked = !toggle.checked
-            }, 
-            3000
+            },3000
         )
 });

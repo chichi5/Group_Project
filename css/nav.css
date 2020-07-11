@@ -33,23 +33,23 @@ html {
   margin: 0 3% 0 0;
 }
 
-.toggle {
+.menu_hamburger .toggle {
   margin: 0 2% 0 0;
   display: block;
   cursor: pointer;
 }
 
-.toggle input {
+.menu_hamburger .toggle input {
   display: none;
 }
 
-.toggle input + div {
+.menu_hamburger .toggle input + div {
   width: 20px;
   height: 14px;
   position: relative;
 }
 
-.toggle input + div div {
+.menu_hamburger .toggle input + div div {
   position: absolute;
   left: 0;
   top: 0;
@@ -61,30 +61,30 @@ html {
   transition: transform .5s ease, -webkit-transform .5s ease;
 }
 
-.toggle input + div div span {
+.menu_hamburger .toggle input + div div span {
   display: block;
   position: absolute;
   left: 0;
   right: 0;
 }
 
-.toggle input + div div span:first-child {
+.menu_hamburger .toggle input + div div span:first-child {
   top: 0;
 }
 
-.toggle input + div div span:first-child:before, .toggle input + div div span:first-child:after {
+.menu_hamburger .toggle input + div div span:first-child:before, .menu_hamburger .toggle input + div div span:first-child:after {
   top: 0;
 }
 
-.toggle input + div div span:last-child {
+.menu_hamburger .toggle input + div div span:last-child {
   bottom: 0;
 }
 
-.toggle input + div div span:last-child:before, .toggle input + div div span:last-child:after {
+.menu_hamburger .toggle input + div div span:last-child:before, .menu_hamburger .toggle input + div div span:last-child:after {
   bottom: 0;
 }
 
-.toggle input + div div span:before, .toggle input + div div span:after {
+.menu_hamburger .toggle input + div div span:before, .menu_hamburger .toggle input + div div span:after {
   content: '';
   display: block;
   width: 47%;
@@ -99,7 +99,7 @@ html {
   transition: transform .5s ease, border-radius .3s ease, background .4s ease, -webkit-transform .5s ease;
 }
 
-.toggle input + div div span:before {
+.menu_hamburger .toggle input + div div span:before {
   left: 0;
   -webkit-transform-origin: 0 50%;
           transform-origin: 0 50%;
@@ -107,7 +107,7 @@ html {
           transform: translate(1px, 0) scaleX(1.1);
 }
 
-.toggle input + div div span:after {
+.menu_hamburger .toggle input + div div span:after {
   right: 0;
   -webkit-transform-origin: 100% 50%;
           transform-origin: 100% 50%;
@@ -115,7 +115,7 @@ html {
           transform: translate(-1px, 0) scaleX(1.1);
 }
 
-.toggle input + div svg {
+.menu_hamburger .toggle input + div svg {
   display: block;
   fill: none;
   stroke: #fff;
@@ -140,41 +140,41 @@ html {
   transition: stroke-dashoffset .5s ease, stroke-dasharray .6s ease, transform .5s ease, stroke .4s ease, -webkit-transform .5s ease;
 }
 
-.toggle input + div svg:nth-child(3) {
+.menu_hamburger .toggle input + div svg:nth-child(3) {
   -webkit-transform: rotate(180deg) scale(1);
           transform: rotate(180deg) scale(1);
 }
 
-.toggle input:checked + div div {
+.menu_hamburger .toggle input:checked + div div {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-.toggle input:checked + div div span:before, .toggle input:checked + div div span:after {
+.menu_hamburger .toggle input:checked + div div span:before, .menu_hamburger .toggle input:checked + div div span:after {
   background: #fff;
 }
 
-.toggle input:checked + div div span:first-child:before {
+.menu_hamburger .toggle input:checked + div div span:first-child:before {
   -webkit-transform: rotate(45deg) translate(2.2px, -3px) scaleX(1.05);
           transform: rotate(45deg) translate(2.2px, -3px) scaleX(1.05);
 }
 
-.toggle input:checked + div div span:first-child:after {
+.menu_hamburger .toggle input:checked + div div span:first-child:after {
   -webkit-transform: rotate(-45deg) translate(-2.2px, -3px) scaleX(1.05);
           transform: rotate(-45deg) translate(-2.2px, -3px) scaleX(1.05);
 }
 
-.toggle input:checked + div div span:last-child:before {
+.menu_hamburger .toggle input:checked + div div span:last-child:before {
   -webkit-transform: rotate(-45deg) translate(2.2px, 3px) scaleX(1.05);
           transform: rotate(-45deg) translate(2.2px, 3px) scaleX(1.05);
 }
 
-.toggle input:checked + div div span:last-child:after {
+.menu_hamburger .toggle input:checked + div div span:last-child:after {
   -webkit-transform: rotate(45deg) translate(-2.2px, 3px) scaleX(1.05);
           transform: rotate(45deg) translate(-2.2px, 3px) scaleX(1.05);
 }
 
-.toggle input:checked + div svg {
+.menu_hamburger .toggle input:checked + div svg {
   stroke-dashoffset: 62;
   stroke-dasharray: 0 82.801 62 82.801;
   -webkit-transform: rotate(90deg);
@@ -182,8 +182,37 @@ html {
   stroke: #fff;
 }
 
-.toggle input:checked + div svg:nth-child(3) {
+.menu_hamburger .toggle input:checked + div svg:nth-child(3) {
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
+}
+
+.navbtns_hamburger .navbtns_btn {
+  position: fixed;
+  right: -42px;
+  margin: 0 3% 0 0;
+  bottom: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbtns_hamburger .navbtns_btn .btn {
+  color: white;
+  font-size: 25px;
+  font-weight: 100;
+  z-index: 2;
+  list-style-type: none;
+  text-align: right;
 }
 /*# sourceMappingURL=nav.css.map */
