@@ -5,6 +5,60 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    position: relative;
-    flex-wrap:wrap ;
+    /* position: relative; */
+    /* flex-wrap:wrap ; */
+}
+
+#a_bg {
+    background-image: url('../img/about/PC/about-present-PC.png');
+}
+
+.a_bg_set {
+    width: 1110px;
+    height: 539.41px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    display: none;
+}
+
+.box_push {
+    /* background-color: royalblue; */
+    width: 671px;
+    height: 519px;
+    clip-path: polygon(0 0, 100% 0, 64% 100%, 0 100%);
+    shape-outside:polygon(0 0, 100% 0, 64% 100%, 0 100%);
+    float: left;
+    margin-right: 80px;
+}
+
+.a_text {
+    font-size: 20px;
+    color: black;
+}
+
+.a_text h3 {
+    margin:120px 0 0 640px;
+    font-weight: 700;
+}
+
+.a_text p {
+    margin: 0 0 100px 0;
+    padding: 50px;
+    line-height: 35px;
+}
+
+.area {
+    bottom: 7%;
+    right: 10%;
+    width: 1130px;
+    height: 489px;
+    position: absolute;
+    display: flex;
+    align-items:center;
+}
+
+.container {
+    height: 50vh;
 }
