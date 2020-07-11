@@ -38,6 +38,39 @@
     <!-- 首頁 -->
     <nav>
         <div class="banner">
+            <!-- 漢堡條 -->
+            <div class="menu_hamburger">
+                <label class="toggle">
+                    <input id="onoffswitch" type="checkbox" class=" active">
+                    <div>
+                        <div>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <svg>
+                            <use xlink:href="#path">
+                        </svg>
+                        <svg>
+                            <use xlink:href="#path">
+                        </svg>
+                    </div>
+                </label>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+                <symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 44 44" id="path">
+                    <path d="M22,22 L2,22 C2,11 11,2 22,2 C33,2 42,11 42,22"></path>
+                </symbol>
+            </svg>
+            <div class="navbtns_hamburger">
+                <ul class="navbtns_btn">
+                    <li class="btn1">MENU</li>
+                    <li class="btn1">ABOUT</li>
+                    <li class="btn1">FOOD</li>
+                    <li class="btn1">MEDIA</li>
+                    <li class="btn1">INFO</li>
+                </ul>
+            </div>
+            
             <div class="navbar">
                 <img class="logo" src="./img/banner/MeatGQ-LOGO.svg" alt="">
                 <ul class="navbtns">
@@ -74,9 +107,6 @@
     <!-- 菜單 -->
     <section id="menu" class="container-fluid">
         <div id="canvas">
-
-            <div class="zoom-icon zoom-icon-in"></div>
-
             <div class="magazine-viewport">
                 <div class="container">
                     <div class="magazine">
