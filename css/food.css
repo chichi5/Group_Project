@@ -8,6 +8,9 @@
     position: relative;
     display: flex;
 }
+
+/* 卡片區域，不含按鈕條 */
+
 #food .card_style_t{
     width: 1050px;
     height: 519px;
@@ -28,6 +31,8 @@
     display: none;
     }
 
+/* 按鈕條 */
+
 .card-btns{
     width: 80px;
     height: 430px;
@@ -41,12 +46,14 @@
     }
 
 #card-btn-t{
-    left: -50px;    
+    left: -80px;    
 }
 
 #card-btn-b{
-    right: 30px;    
+    right: 0px;    
 }
+
+/* 卡片全域，包含按鈕條 */
 
 .card-area-t{
     top: 7%;
@@ -60,41 +67,122 @@
 
 .card-area-style{
     width: 1130px;
-    height: 519px;
+    height: 489px;
     position: absolute;
     display: flex;
     align-items:center;
     }
 
-.card-t-text{
-    background-color: royalblue;
-    width: 500px;
-    height: 300px;
-    clip-path: polygon(0 1%, 100% 0, 31% 100%, 0 100%);
-    shape-outside:polygon(0 1%, 100% 0, 31% 100%, 0 100%);
+/* 不規則字卡 */
+
+/* 酩悅香檳方形區域 */
+.card-t-text-champagne{
+    /* background-color: rgba(65, 105, 225, 0.178); */
+    width: 400px;
+    height: 519px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    shape-outside:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    float: right;
+
+    margin-left: 80px;
 }
 
-.tt{
-    font-size: 20px;
-    color: white;
+/* 香檳以外區域 */
+
+.card-t-text{
+    /* background-color: rgba(65, 105, 225, 0.178); */
+    width: 671px;
+    height: 519px;
+    clip-path: polygon(36% 0, 100% 0, 100% 100%, 0 100%);
+    shape-outside:polygon(36% 0, 100% 0, 100% 100%, 0 100%);
+    float: right;
+
+    margin-left: 80px;
 }
+
+
+
+.TinC-t{
+    font-size: 20px;
+    color: black;
+    padding: 0 0 0 0;
+}
+
+.TinC-t h3{
+    font-weight: 700;
+    margin:120px 0 0 70px;
+}
+
+.TinC-t h4{
+    font-weight: 700;
+    margin:10px 0 0 60px;
+}
+
+.TinC-t p{
+    margin: 0 0 100px 0;
+    padding: 50px;
+    line-height: 35px;
+    
+}
+
+.card-b-text{
+    /* background-color: royalblue; */
+    width: 671px;
+    height: 519px;
+    clip-path: polygon(0 0, 100% 0, 64% 100%, 0 100%);
+    shape-outside:polygon(0 0, 100% 0, 64% 100%, 0 100%);
+    float: left;
+    margin-right: 80px;
+}
+
+.TinC-b{
+    font-size: 20px;
+    color: black;
+}
+
+.TinC-b h3{
+    margin:120px 0 0 640px;
+    font-weight: 700;
+}
+
+.TinC-b h4{
+    font-weight: 700;
+    margin:10px 0 0 60px;
+}
+
+.TinC-b p{
+    margin: 0 0 100px 0;
+    padding: 50px;
+    line-height: 35px;
+    
+}
+
+.more{
+    float: right;
+    color: rgb(39, 39, 39);
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+}
+
+/* 圖卡陰影遮罩 */
 
 #fdmusk-t{
     background-color: rgba(00, 00, 00, 0.7);
     position: absolute;
-    top: 10%;
-    left: 11.4%;
-    width: 995px;
-    height: 464px;
+    top: 5.4%;
+    left: 10%;
+    width: 1050px;
+    height: 520px;
 }
 
 #fdmusk-b{
     background-color: rgba(00, 00, 00, 0.7);
     position: absolute;
-    bottom: 10%;
-    right: 15.7%;
-    width: 995px;
-    height: 464px;
+    bottom: 5.4%;
+    right: 14.2%;
+    width: 1050px;
+    height: 520px;
 }
 
 .fdmusk{
@@ -102,8 +190,10 @@
 }
 
 .fdmusk.active{
-    z-index: 0;
+    z-index: -1;
 }
+
+/* 圖卡背景 */
 
 #t_card_1{
     background-image: url('../img/food/PC/food-wine-champagne-2.png');
@@ -128,6 +218,7 @@
 #b_card_3{
     background-image: url('../img/food/PC/food-meat-us_1.png');
 }
+
 
 #food .card_style_t.active{
     display: block;
