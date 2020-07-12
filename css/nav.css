@@ -187,11 +187,20 @@ html {
           transform: rotate(270deg);
 }
 
-.navbtns_hamburger .navbtns_btn {
+.navbtns_hamburger {
+  display: none;
+  z-index: 998;
   position: fixed;
-  right: -42px;
+  bottom: 24%;
+  right: 0;
   margin: 0 3% 0 0;
-  bottom: 25%;
+}
+
+.navbtns_hamburger.active {
+  display: block;
+}
+
+.navbtns_hamburger.active .navbtns_btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -199,15 +208,12 @@ html {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-.navbtns_hamburger .navbtns_btn .btn1 {
+.navbtns_hamburger.active .navbtns_btn .btn1 {
   color: white;
   font-size: 25px;
   font-weight: 100;
