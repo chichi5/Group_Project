@@ -1,44 +1,192 @@
-.banner_meat {
+.banner {
     width: 100%;
-    height: 100vh;
-    position: relative;
-    background-image: url('/img/pagination/meat/au/pagination-meat-banner-au.png');
+    height: 820px;    
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    overflow-x: hidden;
+    background-position: center;    
 }
 
-.banner_meat::-webkit-scrollbar {
-    display: none;
+.banner_au{
+    background-image: url('../../img/pagination/meat/au/pagination-meat-banner-au.png');
 }
 
-.banner_meat .logo {
-    width: 117px;
-    z-index: 2;
+.banner_jp{
+    background-image: url('../../img/pagination/meat/jp/pagination-meat-banner-jp.png');
 }
 
-.banner_meat .navbtns {
-    display: flex;
-    width: 600px;
-    justify-content: space-between;
-    padding: 0 100px 0 0;
+.banner_us{
+    background-image: url('../../img/pagination/meat/us/pagination-meat-banner-us.png');
 }
 
-.banner_meat .navbtns .btn {
-    color: white;
-    font-size: 25px;
-    font-weight: 100;
-    z-index: 2;
-    list-style-type: none;
-}
-
-#tab_au_meat {
+.bar{
     width: 100%;
-    height: 100vh;
+    height: 120px;
+    padding: 62px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner .bar .logo{
+    width: 115px;
+    height: 120px;
+    margin: 0 0 0 62px;
+}
+
+.banner .bar .btns{
+    list-style: none;
+    display: flex;
+    width: 472px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 62px 0 0;
+}
+
+.banner .bar .btns .btn{
+    color: white;
+    font-size: 24px;
+}
+
+#tab_meat {
+    width: 100%;
+    /* height: 100vh; */
     background-image: url(/img/pagination/bg/pagination-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     color: white;
+}
+
+.au_L {
+    width: 100%;
+    height: 500px;
+    background-image: url(/img/pagination/meat/au/pagination-meat-tab-au-L.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.au_R {
+    width: 100%;
+    height: 500px;
+    background-image: url(/img/pagination/meat/au/pagination-meat-tab-au-R.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.jp_L {
+    width: 100%;
+    height: 500px;
+    background-image: url(/img/pagination/meat/jp/pagination-meat-tab-jp-L.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.jp_R {
+    width: 100%;
+    height: 500px;
+    background-image: url(/img/pagination/meat/jp/pagination-meat-tab-jp-R.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.us_L {
+    width: 100%;
+    height: 500px;
+    background-image: url(/img/pagination/meat/us/pagination-meat-tab-us-L.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.us_R {
+    width: 100%;
+    height: 500px;
+    background-image: url(/img/pagination/meat/us/pagination-meat-tab-us-R.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.line_1 {
+    /* width: 100%; */
+    /* height: 100%; */
+    /* background-color: rebeccapurple; */
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.line_1::before {
+    content: '';
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid white;
+}
+
+.line_2 {
+    /* width: 100%; */
+    /* height: 100%; */
+    /* background-color: rebeccapurple; */
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.line_2::before {
+    content: '';
+    width: 100%;
+    height: 550px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid white;
+}
+
+.line_3 {
+    /* width: 100%; */
+    /* height: 100%; */
+    /* background-color: rebeccapurple; */
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.line_3::before {
+    content: '';
+    width: 30%;
+    height: 210px;
+    position: absolute;
+    top: 0;
+    left: 130px;
+    border-bottom: 1px solid white;
+}
+
+.line_4 {
+    /* width: 100%; */
+    /* height: 100%; */
+    /* background-color: rebeccapurple; */
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.line_4::before {
+    content: '';
+    width: 30%;
+    height: 310px;
+    position: absolute;
+    top: 0;
+    left: 130px;
+    border-bottom: 1px solid white;
+}
+
+.card_bg {
+    background-color: unset;
+    border: unset;
 }

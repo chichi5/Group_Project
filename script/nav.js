@@ -14,12 +14,12 @@ var toggle = document.querySelector('.toggle input')
         
         $(".toggle input").click(function(){
             // 按下第n個按鈕,第n個按鈕和分頁要加上active
-            console.log(this);
             var nav_h = document.querySelector(".navbtns_hamburger")
             if (nav_h.classList.contains("active")) {
                 nav_h.classList.remove("active")
+                console.log("delete active");
             } else {
-                
                 nav_h.classList.add("active")
+                console.log("add active");
             }
         })
