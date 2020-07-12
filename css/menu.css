@@ -1,15 +1,16 @@
 #menu {
     width: 100%;
-    height: 100vh;
     background-image: url('../img/menu/menu-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
 }
 /* #menu .container-fluid{
     padding-left: unset !important;
 } */
 .title_bg{
+    position: absolute;
     width: 570px;
     height: 50px;
     background-color: rgba(181, 181, 181, 0.8);
@@ -23,6 +24,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+
 }
 .title_bg .title_l{
     height: 3px;
