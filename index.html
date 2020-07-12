@@ -31,6 +31,8 @@
     <link rel="stylesheet" href="./book/css/jquery.ui.html4.css">
     <link rel="stylesheet" href="./book/css/jquery.ui.css">
 
+    <!-- Menu 標題字型 -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa&display=swap" rel="stylesheet">    
     <style>
 
     </style>
@@ -107,7 +109,16 @@
 
 
     <!-- 菜單 -->
-    <section id="menu" class="container-fluid">
+    <section id="menu">
+
+        <div class="title_bg">
+            <!-- title_bg 的 css樣式 可以共用 -->
+            <div class="title_l col-lg-2"></div>
+            <div class="title_r col-lg-4">
+                <p>MENU</p>
+            </div>
+        </div>
+        
         <div id="canvas">
             <div class="magazine-viewport">
                 <div class="container">
@@ -170,7 +181,7 @@
         <div class="row">
             <div class="col-lg-3"></div>
             <div class="col-lg-1">
-                <h1 class="my-5">ABOUT</h1>
+                <h2 class="my-5">ABOUT</h2>
             </div>
         </div>
 
