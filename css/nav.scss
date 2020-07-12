@@ -3,16 +3,31 @@
     &:before,
     &:after {
         box-sizing: inherit;
+        
     }
 }
 html {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
 }
+
+a {
+    color: unset;
+    text-decoration: unset; /*刪除底線*/
+}
+
+a:hover{
+    color: unset;
+    text-decoration: unset; /*刪除底線*/
+}
+
+
 
 .menu_hamburger{
     z-index: 999;
-    min-height: calc(100vh - 120px);
+    // min-height: calc(100vh - 120px);
+    min-height: 100vh;
     font-family: Roboto, Arial;
     color: #ADAFB6;
     // background: #5628EE;
@@ -22,9 +37,16 @@ html {
     position: fixed;
     right: 0;
     margin: 0 3% 0 0;
-
-    $color: #fff;
-    $active: #fff;
+    
+    &.colors_w{
+        $color: #fff;
+        $active: #fff;
+    }
+    
+    &.colors_b{
+        $color: #000;
+        $active: #000;
+    }
 
     .toggle {
         margin: 0 2% 0 0;
@@ -171,5 +193,10 @@ html {
                 
             }
         }
+    }
+}
+@media screen and (max-width: 768px){
+    .menu_hamburger ,.navbtns_hamburger{
+        display: none;
     }
 }

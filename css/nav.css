@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
@@ -12,11 +13,24 @@ html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: unset;
+  text-decoration: unset;
+  /*刪除底線*/
+}
+
+a:hover {
+  color: unset;
+  text-decoration: unset;
+  /*刪除底線*/
 }
 
 .menu_hamburger {
   z-index: 999;
-  min-height: calc(100vh - 120px);
+  min-height: 100vh;
   font-family: Roboto, Arial;
   color: #ADAFB6;
   display: -webkit-box;
@@ -220,5 +234,11 @@ html {
   z-index: 2;
   list-style-type: none;
   text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  .menu_hamburger, .navbtns_hamburger {
+    display: none;
+  }
 }
 /*# sourceMappingURL=nav.css.map */

@@ -48,7 +48,7 @@
             <!-- 漢堡條 縮RWD暫時隱藏 -->
 
 
-            <!-- <div class="menu_hamburger">
+            <div class="menu_hamburger lax" data-lax-opacity="(document.querySelector('.menu_hamburger').offsetTop) 0, (document.querySelector('.menu_hamburger').offsetTop+600) 1">
                 <label class="toggle">
                     <input id="onoffswitch" type="checkbox" class=" active">
                     <div>
@@ -72,22 +72,22 @@
             </svg>
             <div class="navbtns_hamburger">
                 <ul class="navbtns_btn ">
-                    <li class="btn1">MENU</li>
-                    <li class="btn1">ABOUT</li>
-                    <li class="btn1">FOOD</li>
-                    <li class="btn1">MEDIA</li>
-                    <li class="btn1">INFO</li>
+                    <li class="btn1"><a href="#menu">MENU</a></li>
+                    <li class="btn1"><a href="#about">ABOUT</a></li>
+                    <li class="btn1"><a href="#food">FOOD</a></li>
+                    <li class="btn1"><a href="#media">MEDIA</a></li>
+                    <li class="btn1"><a href="#footer_1">INFO</a></li>
                 </ul>
-            </div> -->
+            </div>
             
             <div class="navbar">
                 <img class="logo" src="./img/banner/MeatGQ-LOGO.svg" alt="">
                 <ul class="navbtns">
-                    <li class="btn">MENU</li>
-                    <li class="btn">ABOUT</li>
-                    <li class="btn">FOOD</li>
-                    <li class="btn">MEDIA</li>
-                    <li class="btn">INFO</li>
+                    <li class="btn"><a href="#menu">MENU</a></li>
+                    <li class="btn"><a href="#about">ABOUT</a></li>
+                    <li class="btn"><a href="#food">FOOD</a></li>
+                    <li class="btn"><a href="#media">MEDIA</a></li>
+                    <li class="btn"><a href="#footer_1">INFO</a></li>
                 </ul>
             </div>
             <div class="container">
@@ -115,7 +115,6 @@
 
     <!-- 菜單 -->
     <section id="menu">
-
         <div class="title_bg">
             <!-- title_bg 的 css樣式 可以共用 -->
             <div class="title_l col-lg-2"></div>
@@ -183,7 +182,6 @@
     <!-- 關於 -->
     <div id="about" class="container-fluid">
 
-        
 
         <div class="row">
             <div class="title_bg">
@@ -368,7 +366,7 @@
 
     <!-- 頁尾 -->
     <footer>
-        <div class="container-fluid">
+        <div id="footer_1" class="container-fluid">
             <div class="ftlogo">
                 <img class="logo" src="./img/logo/MeatGQ-LOGO-白色.svg" alt="">
             </div>
@@ -404,6 +402,11 @@
 
     <!-- nav JS -->
     <script src="./script/nav.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        
+    </script>
 
     <!-- menu book JS -->
     <script type="text/javascript" src="./book/extras/jquery.min.1.7.js"></script>
