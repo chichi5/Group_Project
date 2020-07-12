@@ -41,15 +41,19 @@
 }
 
 .banner .container {
-    height: 600px;
+    min-height: 630px;
+    position: relative;
 }
 
 .l-ani {
     position: absolute;
     width: 865px;
     height: 590px;
-    top: 10%;
-    left: 12%;
+
+    /* 父層無relative */
+    
+    top: -10%;
+    left: -20%;
 }
 
 #charcoal {
@@ -90,20 +94,29 @@
     width: 1184px;
     height: 1036px;
     z-index: 1;
-    right: 10%;
-    top: -12%;
+    /* 父層無relative */
+
+    /* right: 10%;
+    top: -12%; */
+
+    right: -10%;
+    top: -42%;
     overflow: hidden;
 }
 
 #smoke {
     position: absolute;
-    top: 12%;
-    right: 12%;
+    /* 父層無relative */
+    /* top: 12%;
+    right: 12%; */
+    top: -8%;
+    right: -5%;
     opacity: 0.2;
     z-index: 1;
 }
 
 #steak {
+    position: absolute;
     width: 100%;
     height: 100%;
 }
@@ -114,8 +127,7 @@
     height: 70px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
 }
 
 .order-btn {
@@ -137,4 +149,48 @@
     margin: 0;
     color: white;
     opacity: 1;
+}
+
+@media screen and (max-width: 1450px){
+    #smoke{
+        right:-1%
+    }
+    .l-ani{
+        /* 父層無relative */
+        left:-10%
+    }
+    .r-ani{
+        right: -5%;
+    }    
+}
+
+@media screen and (max-width: 1300px){
+    #smoke{
+        right: 5%;
+        opacity: 0.05;
+    }
+    .l-ani{
+        /* 父層無relative */
+        /* left:-20% */
+    }
+    .r-ani{
+        right: 0%;
+    }    
+}
+
+
+
+@media screen and (max-width: 853px){
+    .banner .navbtns{
+        padding:0 20px 0 0;
+    }
+    .navbar{
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #steak{
+        /* height: auto; */
+    }
 }

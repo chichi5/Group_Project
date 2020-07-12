@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="./css/food.css">
     <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/footer.css">
+    
 
     <!-- media_video CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -31,6 +32,8 @@
     <link rel="stylesheet" href="./book/css/jquery.ui.html4.css">
     <link rel="stylesheet" href="./book/css/jquery.ui.css">
 
+    <!-- Menu 標題字型 -->
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Exa&display=swap" rel="stylesheet">    
     <style>
 
     </style>
@@ -40,8 +43,12 @@
     <!-- 首頁 -->
     <nav>
         <div class="banner">
-            <!-- 漢堡條 -->
-            <div class="menu_hamburger">
+
+            
+            <!-- 漢堡條 縮RWD暫時隱藏 -->
+
+
+            <!-- <div class="menu_hamburger">
                 <label class="toggle">
                     <input id="onoffswitch" type="checkbox" class=" active">
                     <div>
@@ -64,14 +71,14 @@
                 </symbol>
             </svg>
             <div class="navbtns_hamburger">
-                <ul class="navbtns_btn">
+                <ul class="navbtns_btn ">
                     <li class="btn1">MENU</li>
                     <li class="btn1">ABOUT</li>
                     <li class="btn1">FOOD</li>
                     <li class="btn1">MEDIA</li>
                     <li class="btn1">INFO</li>
                 </ul>
-            </div>
+            </div> -->
             
             <div class="navbar">
                 <img class="logo" src="./img/banner/MeatGQ-LOGO.svg" alt="">
@@ -83,8 +90,8 @@
                     <li class="btn">INFO</li>
                 </ul>
             </div>
-            <video id="smoke" src="./img/banner/smoke2.mp4" autoplay loop muted></video>
             <div class="container">
+            <video id="smoke" src="./img/banner/smoke2.mp4" autoplay loop muted></video>
                 <div class="l-ani">
                     <div class="mask"><video id="charcoal" src="./img/banner/charcoal.mp4" loop autoplay muted></video>
                         <div class="mask1"><img id="grilled" src="./img/banner/grilled.png" alt=""></div>
@@ -107,7 +114,16 @@
 
 
     <!-- 菜單 -->
-    <section id="menu" class="container-fluid">
+    <section id="menu">
+
+        <div class="title_bg">
+            <!-- title_bg 的 css樣式 可以共用 -->
+            <div class="title_l col-lg-2"></div>
+            <div class="title_r col-lg-4">
+                <p>MENU</p>
+            </div>
+        </div>
+        
         <div id="canvas">
             <div class="magazine-viewport">
                 <div class="container">
@@ -167,10 +183,15 @@
     <!-- 關於 -->
     <div id="about" class="container-fluid">
 
+        
+
         <div class="row">
-            <div class="col-lg-3"></div>
-            <div class="col-lg-1">
-                <h1 class="my-5">ABOUT</h1>
+            <div class="title_bg">
+                <!-- title_bg 的 css樣式 可以共用 -->
+                <div class="title_l col-lg-2"></div>
+                <div class="title_r col-lg-4">
+                    <p>ABOUT</p>
+                </div>
             </div>
         </div>
 
@@ -200,6 +221,7 @@
     <!-- 食物 -->
     <section>
         <div id="food" class="container-fluid">
+            
             <div id="fdmusk-t" class="fdmusk"></div>
             <div id="fdmusk-b" class="fdmusk active"></div>
 
@@ -286,11 +308,23 @@
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
 
     <!-- 媒體 -->
     <div id="media" class="container-fluid">
+
+        <div class="row">
+            <div class="title_bg">
+                <!-- title_bg 的 css樣式 可以共用 -->
+                <div class="title_l col-lg-2"></div>
+                <div class="title_r col-lg-4">
+                    <p>MEDIA</p>
+                </div>
+            </div>
+        </div>
+
         <div class="media">
             <div class="swiper-container">
               <div class="swiper-wrapper">
