@@ -180,6 +180,10 @@
     opacity: 1;
 }
 
+.navbtns_mobile{
+    display: none;
+}
+
 @media screen and (max-width: 1450px){
     #smoke{
         right:-1%
@@ -294,8 +298,30 @@
         margin: 0;
         padding: 0;
     }
+
+    .banner .navbtns{
+        width: 100%;
+        z-index: 10;
+    }
     .navbtns .btn{
         line-height: 80px;
-        width: 1%;
+        width: 20%;
     }
+    .order{
+        position: absolute;
+        width: 260px;
+        right: 30%;
+        bottom: 13%;
+    }
+}
+
+@media screen and (max-width:576px){
+    .navbtns .btn{
+        padding: 0;
+    }
+    .navbtns .li{
+        padding: 0;
+        margin: 0;
+    }
+    
 }
