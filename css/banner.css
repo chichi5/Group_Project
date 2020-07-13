@@ -183,8 +183,14 @@
     }    
 }
 
-@media screen and(max-width:1200px){
-    
+@media screen and (max-width:1200px){
+    #smoke{
+        opacity: 0.2;
+    }
+    .r-ani{
+        left: 0%;
+        right: unset;
+    }
 }
 
 
