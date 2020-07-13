@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
+    display: none;
 }
 /* #menu .container-fluid{
     padding-left: unset !important;
@@ -27,19 +28,55 @@
 
 }
 .title_bg .title_l{
-    height: 3px;
+    width: 100px;
+    height: 4px;
     background-color: black;
     position: relative;
     top: 25px;
 }
+
+.title_bg p{
+    margin: 0 15px 0 15px;
+    color: black;
+}
 .title_bg .title_r {
-    height: 3px;
-}
-.title_bg .title_r p{
-    margin-right: 15px;
-
+    display: none;
 }
 
+#menu-phone{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/menu/menu-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    /* display: none; */
+}
+#menu-phone .menu-swiper img{
+    /* width: 100%; */
+    height: 80vh;
+}
+
+.swiper-slide{
+    /* text-align: center;
+      font-size: 18px; */
+      /* background: #fff; */
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+}
 
 
 
@@ -47,6 +84,39 @@
     #canvas{
         visibility: hidden;
     }
+    .title_bg{  
+        width: 100%;
+        height: 70px;
+        font-size: 3rem;
+        line-height:70px;
+        justify-content: center;
+    }
+    .title_bg .title_l{
+        width: 100px;
+        height: 6px;
+        background-color: black;
+        position: relative;
+        top: 35px;
+    }
+    .title_bg .title_r {
+        display: block;
+        width: 100px;
+        height: 6px;
+        background-color: black;
+        position: relative;
+        top: 35px;
+    }
+
+}
+
+@media (max-width: 576px){
+    .title_bg .title_l{
+        width: 60px; 
+    }
+    .title_bg .title_r {       
+        width: 60px;
+    }
+
 }
 
 

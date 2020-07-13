@@ -1,4 +1,4 @@
-var mySwiper = new Swiper('.swiper-container', {
+var mySwiper = new Swiper('.media-swiper', {
     initialSlide: 0,
     observer: true, // 修改swiper自己或子元素時，自動初始化swiper
     observeParents: true, // 修改swiper的父元素時，自動初始化swiper
