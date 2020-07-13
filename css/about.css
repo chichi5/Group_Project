@@ -32,14 +32,17 @@
 
 .a_text h3 {
     margin: 100px 0 0 660px;
-    font-weight: 700;
+    font-weight: 900;
     padding: 170px 0 0 0;
+    font-size: 24px;
 }
 
 .a_text p {
     margin: 0px 0 0px 0;
     padding: 20px 30px;
     line-height: 40px;
+    font-size: 18px;
+    text-align: justify;
 }
 
 .area {
