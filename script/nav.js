@@ -35,22 +35,24 @@ var toggle = document.querySelector('.toggle input')
         }
         window.requestAnimationFrame(updateLax)
     }
-    // var menu = document.getElementById('menu');
-    // var sc = window.scrollY;
-    // $(window).scroll(function () {
-    //     $('h2').text($(window).scrollTop());
-    // })
+   
+    // 偵測滾輪位置
+    // 抓到漢堡條的位置
+    // 漢堡條碰到menu變顏色
+    // 超過menu變顏色
     
-    // if(sc = "533"){
-    //     console.log(sc)
-    // }
-    
-    // var nav_h = document.querySelector(".navbtns_hamburger")
+    // var menu_h = document.querySelector(".menu_hamburger")
+    // var toggl = document.querySelector('.toggle')
+    // var menu = document.querySelector("#menu")    
+    // document.querySelector('.menu_hamburger').offsetTop
+
     // window.onscroll = function () {
-    //     if( 533 < window.scrollY < 1000){
-    //         nav_h.classList.add('colors_b')
-    //         nav_h.classList.remove('colors_w')
-    //         console.log(window.scrollY);
+
+    //     if( document.documentElement.scrollTop >= menu.offsetTop){
+    //         menu_h.classList.add('colors_b')
+    //         menu_h.classList.remove('colors_w')
+    //     console.log( document.documentElement.scrollTop >= menu.offsetTop );
+
             
     //     }else{
     //         nav_h.classList.remove('colors_w')

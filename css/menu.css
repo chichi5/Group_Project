@@ -37,4 +37,17 @@
 }
 .title_bg .title_r p{
     margin-right: 15px;
+
 }
+
+
+
+
+@media (max-width: 768px){
+    #canvas{
+        visibility: hidden;
+    }
+}
+
+
+
