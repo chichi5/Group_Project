@@ -6,13 +6,9 @@
         // console.log(reg);
 
         function loadApp() {
-
             $('#canvas').fadeIn(1000);
-
             var flipbook = $('.magazine');
-
             // Check if the CSS was already loaded
-
             if (flipbook.width() == 0 || flipbook.height() == 0) {
                 setTimeout(loadApp, 10);
                 return;
@@ -393,3 +389,5 @@
             both: ['./book/lib/zoom.min.js', './book/js/magazine.js', './book/css/magazine.css'],
             complete: loadApp
         });
+
+        
