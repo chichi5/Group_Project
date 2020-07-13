@@ -177,13 +177,14 @@
         right: 5%;
         opacity: 0.05;
     }
-    .l-ani{
-        /* 父層無relative */
-        /* left:-20% */
-    }
+    
     .r-ani{
         right: 0%;
     }    
+}
+
+@media screen and(max-width:1200px){
+    
 }
 
 
