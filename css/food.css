@@ -178,8 +178,8 @@
 #fdmusk-t{
     background-color: rgba(00, 00, 00, 0.7);
     position: absolute;
-    top: 5.4%;
-    left: 10%;
+    /* top: 5.4%; */
+    /* left: 10%; */
     width: 1050px;
     height: 520px;
 }
@@ -187,9 +187,9 @@
 #fdmusk-b{
     background-color: rgba(00, 00, 00, 0.7);
     position: absolute;
-    bottom: 5.4%;
+    /* bottom: 7%; */
     /* right: 14.2%; */
-    right: calc(10% + 80px);
+    /* right: calc(10% + 80px); */
     width: 1050px;
     height: 520px;
 }
@@ -240,7 +240,6 @@
     z-index: 3;
 }
 
-
 .btn_area{
     width: 50px;
     height: 30px;
@@ -275,3 +274,124 @@
     height: 20px;
 }
 
+
+@media screen and (max-width:1427px){
+    #food .card_style_t,#food .card_style_b,#fdmusk-t,#fdmusk-b{
+        width: 525px;
+        height: 260px;
+    }
+    .card-area-style{
+        width: 665px;
+        height: 245px;
+    }
+    .card-btns{
+        width: 40px;
+        height: 215px;
+        padding: 60px 0;
+    }
+    .fct_btn,.fcb_btn{
+        width: 7.5px;
+        height: 7.5px;
+    }
+    #food .card-btns .btn_area .fct_btn.active,#food .card-btns .btn_area .fcb_btn.active{
+        width: 10px;
+        height: 10px;
+    }
+    #card-btn-t{
+        left: -40px;    
+    }
+    #card-btn-b{
+        right: 100px;    
+    }
+    .card-area-t{
+        top: 25%;
+        left: 10%;
+    }
+    
+    .card-area-b{
+        bottom: 25%;
+        right: 10%;
+    }
+    #fdmusk-t{
+        /* top: 24.2%; */
+        /* left: 10%; */
+    }
+    #fdmusk-b{
+        /* bottom: 24.2%; */
+        /* right: calc(25% - 40px); */
+    }
+
+    .card-t-text-champagne{
+        /* background-color: rgba(65, 105, 225, 0.178); */
+        width: 200px;
+        height: 259.5px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        shape-outside:polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    
+        margin-left: 40px;
+    }
+
+    .card-t-text{
+        /* background-color: rgba(65, 105, 225, 0.178); */
+        width: 335.5px;
+        height: 259.5px;
+        clip-path: polygon(36% 0, 100% 0, 100% 100%, 0 100%);
+        shape-outside:polygon(36% 0, 100% 0, 100% 100%, 0 100%);
+    
+        margin-left: 20px;
+    }
+    .card-b-text{
+        /* background-color: royalblue; */
+        width: 335.5px;
+        height: 259.5px;
+        clip-path: polygon(0 0, 100% 0, 64% 100%, 0 100%);
+        shape-outside:polygon(0 0, 100% 0, 64% 100%, 0 100%);
+        margin-right: 20px;
+    }
+
+    .TinC-t{
+        font-size: 12px;
+        color: black;
+        padding: 0 0 0 0;
+    }
+    
+    .TinC-t h3{
+        font-size: 18px;
+        margin:30px 0 0 20px;
+    }
+    
+    .TinC-t h4{
+        font-size: 15px;
+        margin:5px 0 0 20px;
+    }
+    
+    .TinC-t p{
+        margin: 0 0 50px 0;
+        padding: 20px;
+        line-height: 17.5px;
+    }
+    .TinC-b{
+        font-size: 12px;
+    }
+    
+    .TinC-b h3{
+        font-size: 18px;
+        margin:20px 0 0 40px;
+    }
+    
+    .TinC-b h4{
+        font-size: 15px;
+        margin:10px 0 0 60px;
+    }
+    
+    .TinC-b p{
+        margin: 0 0 100px 0;
+        padding: 20px;
+        line-height: 17.5px;
+        }
+    .more{
+        font-size: 10px;
+        height: 20px;
+        line-height: 20px;
+    }
+}

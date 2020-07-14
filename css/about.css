@@ -7,11 +7,29 @@
     background-position: center;
 }
 
+#about-phone {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/about/phone/about-phone-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: none;
+}
+
 .a_bg_set {    
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url('../img/about/PC/about-present-PC.png');
+
+}
+
+.a_bg_set-phone {    
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('../img/about/phone/about-present-phone.png');
 
 }
 
@@ -25,7 +43,22 @@
     margin-right: 9px;
 }
 
+.box_push-phone {
+    /* background-color: rgba(231, 7, 7, 0.5); */
+    width: 100%;
+    height: 390px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    /* shape-outside:polygon(0 0, 100% 0, 64% 100%, 0 100%); */
+    float: left;
+    margin-right: 9px;
+}
+
 .a_text {
+    font-size: 20px;
+    color: black;
+}
+
+.a_text-phone {
     font-size: 20px;
     color: black;
 }
@@ -45,7 +78,27 @@
     text-align: justify;
 }
 
+.a_text-phone h3 {
+    margin: 100px 0 0 390px;
+    font-weight: 900;
+    padding: 100px 0 0 0;
+    font-size: 24px;
+}
+
+.a_text-phone p {
+    margin: 0px 0 0px 0;
+    padding: 20px 120px 20px 180px;
+    line-height: 40px;
+    font-size: 18px;
+    text-align: justify;
+}
+
 .area {
+    width: 100%;
+    height: 100%;
+}
+
+.area-phone {
     width: 100%;
     height: 100%;
 }
@@ -76,4 +129,29 @@
 }
 .title_bg .title_r p{
     margin-right: 15px;
+}
+
+@media (max-width: 991px){
+    #about {
+        display: none;
+    }
+    #about-phone {
+        display: block;
+        height: 1100px;
+    }
+}
+
+@media (max-width: 767px){
+    .box_push-phone {
+        height: 400px;
+    }
+
+    .a_text-phone h3 {
+        margin: 100px 0 0 250px;
+    }
+
+    .a_text-phone p {
+        padding: 20px 60px 0px 90px;
+
+    }
 }
