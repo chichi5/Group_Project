@@ -342,8 +342,13 @@
 @media screen and (max-width:375px){
     .banner .container{
     min-height: 500px;
-
     }
+
+    .banner .logo {
+        width: 58px;
+        height: 60px;
+    }
+
     #title_text{
         top: 10%;
         left: 0%;
@@ -370,9 +375,12 @@
         width: 260px;
         height: 40px;
         left: 15%;
-        bottom: 10%;
+        bottom: 20%;
     }
     .order-btn{
         font-size: 18px;
+    }
+    .banner .navbtns .btn {
+        font-size: px;
     }
 }
