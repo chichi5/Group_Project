@@ -240,7 +240,6 @@
     z-index: 3;
 }
 
-
 .btn_area{
     width: 50px;
     height: 30px;
@@ -275,3 +274,50 @@
     height: 20px;
 }
 
+
+@media screen and (max-width:1427px){
+    #food .card_style_t,#food .card_style_b,#fdmusk-t,#fdmusk-b{
+        width: 525px;
+        height: 260px;
+    }
+    .card-area-style{
+        width: 665px;
+        height: 245px;
+    }
+    .card-btns{
+        width: 40px;
+        height: 215px;
+        padding: 60px 0;
+    }
+    .fct_btn,.fcb_btn{
+        width: 7.5px;
+        height: 7.5px;
+    }
+    #food .card-btns .btn_area .fct_btn.active,#food .card-btns .btn_area .fcb_btn.active{
+        width: 10px;
+        height: 10px;
+    }
+    #card-btn-t{
+        left: -40px;    
+    }
+    #card-btn-b{
+        right: 100px;    
+    }
+    .card-area-t{
+        top: 25%;
+        left: 10%;
+    }
+    
+    .card-area-b{
+        bottom: 25%;
+        right: 10%;
+    }
+    #fdmusk-t{
+        top: 24.2%;
+        left: 10%;
+    }
+    #fdmusk-b{
+        bottom: 24.2%;
+        right: calc(25% - 40px);
+    }
+}
