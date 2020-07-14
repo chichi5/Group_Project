@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    display: none;
+    /* display: none; */
 }
 /* #menu .container-fluid{
     padding-left: unset !important;
@@ -51,7 +51,7 @@
     background-repeat: no-repeat;
     background-position: center;
     position: relative;
-    /* display: none; */
+    display: none;
 }
 #menu-phone .menu-swiper img{
     /* width: 100%; */
@@ -81,9 +81,13 @@
 
 
 @media (max-width: 768px){
-    #canvas{
-        visibility: hidden;
+    #menu{
+        display: none;
     }
+    #menu-phone{
+        display: block;
+    }
+    
     .title_bg{  
         width: 100%;
         height: 70px;
@@ -110,6 +114,7 @@
 }
 
 @media (max-width: 576px){
+    
     .title_bg .title_l{
         width: 60px; 
     }
