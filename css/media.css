@@ -17,6 +17,86 @@
     height: 100%;
 }
 
+#media_phone{
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/media/media-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    /* display: none; */
+}
+
+
+
+/* #media_phone iframe{
+    width: 100%;
+    height: 100%;
+} */
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.iframe-16x9 {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+.iframe-4x3 {
+    position: relative;
+    padding-bottom: 75%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+.iframe-16x9 iframe, .iframe-4x3 iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
+.mobile .iframe-16x9 {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+.mobile .iframe-4x3 {
+    position: relative;
+    padding-bottom: 75%;
+    padding-top: 35px;
+    height: 0;
+    overflow: hidden;
+}
+.mobile .iframe-16x9 iframe, .mobile .iframe-4x3 iframe {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+
 /* 以下 Lightbox */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800|Open+Sans+Condensed:300,700);
 
