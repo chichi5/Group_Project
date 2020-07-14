@@ -302,6 +302,7 @@
     .banner .navbtns{
         width: 100%;
         z-index: 10;
+        padding: 0;
     }
     .navbtns .btn{
         line-height: 80px;
@@ -316,12 +317,26 @@
 }
 
 @media screen and (max-width:576px){
-    .navbtns .btn{
-        padding: 0;
-    }
-    .navbtns .li{
+        .navbtns .li{
         padding: 0;
         margin: 0;
     }
+    .r-ani{
+        width: 550px;
+        height: 400px;
+        top: 35%;
+        right: 5%;
+    }
+    #smoke{
+        width: 500px;
+        top: 35%;
+        right: 5%;
+    }
+    .order{
+        right: 27%;
+    }
+}
+
+@media screen and (max-width:375px){
     
 }
