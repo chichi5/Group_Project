@@ -35,7 +35,8 @@
 .banner .bar .btns{
     list-style: none;
     display: flex;
-    width: 472px;
+    /* ↓ 原472px ↓ */
+    width: 550px;
     justify-content: space-around;
     align-items: center;
     margin: 0 62px 0 0;
