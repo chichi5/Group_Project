@@ -36,14 +36,22 @@
 .card-btns{
     width: 80px;
     height: 430px;
-    background-color: white;
+    /* background-color: white; */
     position: absolute;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     padding: 180px 0;
-    }
+}
+.card-btns-l{
+    background: linear-gradient(to right,rgb(255, 255, 255),rgb(255, 255, 255),rgb(220, 220, 220),rgb(150, 150, 150));
+
+}
+.card-btns-r{
+    background: linear-gradient(to left,rgb(255, 255, 255),rgb(255, 255, 255),rgb(220, 220, 220),rgb(150, 150, 150));
+
+}
 
 #card-btn-t{
     left: -80px;    
