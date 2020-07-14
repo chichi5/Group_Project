@@ -8,9 +8,9 @@
 
 /* 隱藏Y軸拉桿 */
 
-/* .banner::-webkit-scrollbar {
+.banner::-webkit-scrollbar {
     display: none;
-} */
+}
 
 .navbar {
     width: 100%;
@@ -274,19 +274,29 @@
     .navbtns{
         margin: 30px 0 0 0;
     }
+    
 }
 
 @media screen and (max-width: 768px){
+    .banner .logo {
+        width: 58px;
+        height: 60px;
+    }
+
+    .banner .container{
+        min-height: 500px;
+        }
     .r-ani{
-        top: 17%;
+        top: -15%;
         right: 3%;
     }
+
     #smoke{
         top: 17%;
         right: 3%;
     }
     #title_text{
-        top: 15%;
+        top: 0%;
         left: 0%;
         padding: 0 20px;
     }
@@ -316,42 +326,9 @@
         right: 30%;
         bottom: 13%;
     }
-}
-
-@media screen and (max-width:576px){
-        .navbtns .li{
-        padding: 0;
-        margin: 0;
-    }
-    .r-ani{
-        width: 550px;
-        height: 400px;
-        top: 35%;
-        right: 5%;
-    }
-    #smoke{
-        width: 500px;
-        top: 35%;
-        right: 5%;
-    }
-    .order{
-        right: 27%;
-    }
-}
-
-@media screen and (max-width:375px){
-    .banner .container{
-    min-height: 500px;
-    }
-
-    .banner .logo {
-        width: 58px;
-        height: 60px;
-    }
-
     #title_text{
-        top: 10%;
-        left: 0%;
+        top: 0%;
+        left: 7%;
     }
     #title_text h1{
         font-size: 20px;
@@ -359,15 +336,41 @@
     #title_text p{
         font-size: 10px;
     }
+}
+
+@media screen and (max-width:576px){
+    .navbtns .li{
+    padding: 0;
+    margin: 0;
+    }
     .r-ani{
-        left: 5%;
+        width: 400px;
+        height: 300px;
+        top: 7%;
+        right: 12%;
+    }
+    #smoke{
+        width: 400px;
+        top: 7%;
+        right: 12%;
+    }
+    .order{
+        right: 22%;
+        bottom: 17%;
+    }
+}
+
+@media screen and (max-width:375px){
+    
+    .r-ani{
+        left: 0%;
         top: 20%;
         width: 300px;
         height: 250px;
     }
     #smoke{
         left: 5%;
-        top: 5%;
+        top: 0%;
         width: 300px;
         height: 300px;
     }
