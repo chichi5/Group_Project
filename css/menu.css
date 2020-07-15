@@ -87,6 +87,20 @@
 }
 
 
+/* 左右箭頭顏色 */
+.swiper-button-next:after, .swiper-button-prev:after {
+color: white;
+}
+
+
+
+
+/* 下方點點顏色 */
+:root{
+    --swiper-theme-color: #fff !important;
+}
+
+
 @media (max-width: 768px){
     #menu{
         display: none;

@@ -212,7 +212,7 @@
     
     top: 0;left: 0;
     
-    width: 100%;
+    width: 96%;
     
     height: 100%;
 }
@@ -224,4 +224,8 @@
     #media_phone{
         display: block;
     }
+    :root{
+        --swiper-theme-color: #fff !important;
+    }
+    
 }
