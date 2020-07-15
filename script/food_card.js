@@ -112,13 +112,13 @@ function Allclearfullcard() {
         const winebtn = winebtns[i];
 
         winebtn.onmouseover = function() {
-            AllclearWinebtns()
+            AllclearWinebtns_phone()
 
             winecard.classList.add('active')
             winebtn.classList.add('active')
         }
 
-        function AllclearWinebtns() {
+        function AllclearWinebtns_phone() {
             for (let i = 0; i < winebtns.length; i++) {
                 const winecard = winecards[i];
                 const winebtn = winebtns[i];
@@ -140,13 +140,13 @@ function Allclearfullcard() {
         const meatbtn = meatbtns[i];
 
         meatbtn.onmouseover = function() {
-            AllclearMeatbtns()
+            AllclearMeatbtns_phone()
 
             meatcard.classList.add('active')
             meatbtn.classList.add('active')
         }
 
-        function AllclearMeatbtns() {
+        function AllclearMeatbtns_phone() {
             for (let i = 0; i < meatbtns.length; i++) {
                 const meatcard = meatcards[i];
                 const meatbtn = meatbtns[i];
