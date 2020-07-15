@@ -342,6 +342,9 @@
 }
 
 @media screen and (max-width:576px){
+    #title_text{
+        left: 4%;
+    }
     .navbtns .li{
     padding: 0;
     margin: 0;
@@ -349,17 +352,17 @@
     .r-ani{
         width: 400px;
         height: 300px;
-        top: 7%;
-        right: 12%;
+        top: 4%;
+        right: 10%;
     }
     #smoke{
         width: 400px;
-        top: 7%;
-        right: 12%;
+        top: 4%;
+        right: 10%;
     }
     .order{
-        right: 22%;
-        bottom: 17%;
+        right: 17%;
+        bottom: 30%;
     }
 }
 
