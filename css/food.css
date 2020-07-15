@@ -9,6 +9,10 @@
     display: flex;
 }
 
+#food_phone{
+    display: none;
+}
+
 /* 卡片區域，不含按鈕條 */
 
 #food .card_style_t{
@@ -64,12 +68,12 @@
 /* 卡片全域，包含按鈕條 */
 
 .card-area-t{
-    top: 7%;
+    top: 17%;
     left: 10%;
 }
 
 .card-area-b{
-    bottom: 7%;
+    bottom: 17%;
     right: 10%;
     }
 
@@ -393,5 +397,24 @@
         font-size: 10px;
         height: 20px;
         line-height: 20px;
+    }
+}
+
+@media screen and (max-width:768px){
+    #food_phone{
+        display: block;
+    }
+    .card-title{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .card-text{
+        font-size: 18px;
+    }
+    .phone_card{
+        display: none;
+    }
+    .phone_card.active{
+        display: block;
     }
 }
