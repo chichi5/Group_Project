@@ -48,7 +48,7 @@
 
                 // The number of pages
                 // 頁數設定
-                pages: 8,
+                pages: 11,
 
                 // Events
 
