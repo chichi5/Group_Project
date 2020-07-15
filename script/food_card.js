@@ -21,14 +21,14 @@ for (let i = 0; i < fctbtns.length; i++) {
     const tcard = tcards[i];
     
     fctbtn.onmouseover = function(){
-        AllclearT()
+        AllclearWinebtns()
 
         fctbtn.classList.add('active')
         tcard.classList.add('active')
     }
 }
 
-function AllclearT() {
+function AllclearWinebtns() {
     for (let i = 0; i < fctbtns.length; i++) {
         const fctbtn = fctbtns[i];
         const tcard = tcards[i];
@@ -45,14 +45,14 @@ for (let i = 0; i < fcbbtns.length; i++) {
     const bcard = bcards[i];
     
     fcbbtn.onmouseover = function(){
-        AllclearB()
+        AllclearMeatbtns()
 
         fcbbtn.classList.add('active')
         bcard.classList.add('active')
     }
 }
 
-function AllclearB() {
+function AllclearMeatbtns() {
     for (let i = 0; i < fcbbtns.length; i++) {
         const fcbbtn = fcbbtns[i];
         const bcard = bcards[i];
@@ -67,12 +67,12 @@ for (let i = 0; i < fullcard.length; i++) {
     const fcard = fullcard[i];
    
     fcard.onmouseover = function(){   
-        AllclearC()
+        Allclearfullcard()
         fcard.classList.add('active')
     }
 }
 
-function AllclearC() {
+function Allclearfullcard() {
     for (let i = 0; i < fullcard.length; i++) {
         const fcard = fullcard[i];
 
@@ -86,15 +86,48 @@ function AllclearC() {
         const musk = msk[i];
         
         musk.onmouseover = function(){ 
-            AllclearD()
+            AllclearMsk()
             musk.classList.add('active')
         }
     }
     
-    function AllclearD() {
+    function AllclearMsk() {
         for (let i = 0; i < msk.length; i++) {
             const musk = msk[i];
     
             musk.classList.remove("active")
         }
     }
+
+
+    // phone版
+
+    //酒卡
+
+    //肉卡
+    var meatcards = document.querySelectorAll('.phone_card_b')
+    var meatbtns = document.querySelectorAll('.phone_btn_b')
+
+    for (let i = 0; i < meatcards.length; i++) {
+        const meatcard = meatcards[i];
+        const meatbtn = meatbtns[i];
+
+        meatbtn.onmouseover = function() {
+            AllclearMeatbtns()
+
+            meatcard.classList.add('active')
+            meatbtn.classList.add('active')
+        }
+
+        function AllclearMeatbtns() {
+            for (let i = 0; i < meatbtns.length; i++) {
+                const meatcard = meatcards[i];
+                const meatbtn = meatbtns[i];
+
+                meatcard.classList.remove('active')
+            meatbtn.classList.remove('active')
+        }
+
+    }
+
+    
