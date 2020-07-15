@@ -390,6 +390,17 @@
         font-size: 18px;
     }
     .banner .navbtns .btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 12px;
+        height: 50px;
+        line-height: 50px;
+    }
+    .banner .navbtns{
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
