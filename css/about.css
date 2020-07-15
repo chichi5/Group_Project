@@ -138,7 +138,7 @@
     #about-phone {
         display: block;
         height: 1100px;
-    }
+    }    
 }
 
 @media (max-width: 767px){
@@ -153,5 +153,66 @@
     .a_text-phone p {
         padding: 20px 60px 0px 90px;
 
+    }
+
+    .nn {
+        display: none;
+    }
+}
+
+@media (max-width: 481px){
+    .box_push-phone {
+        height: 450px;
+    }
+
+    .a_text-phone h3 {
+        margin: 100px 0 0 220px;
+    }
+
+    .a_text-phone p {
+        padding: 20px 50px 0px 80px;
+
+    }
+
+    .nn {
+        display: none;
+    }
+}
+
+@media (max-width: 447px){
+    .box_push-phone {
+        height: 480px;
+    }
+
+    .a_text-phone h3 {
+        margin: 100px 0 0 170px;
+    }
+
+    .a_text-phone p {
+        padding: 20px 30px 0px 50px;
+
+    }
+
+    .nn {
+        display: none;
+    }
+}
+
+@media (max-width: 400px){
+    .box_push-phone {
+        height: 500px;
+    }
+
+    .a_text-phone h3 {
+        margin: 100px 0 0 60px;
+    }
+
+    .a_text-phone p {
+        padding: 10px 20px 0px 20px;
+
+    }
+
+    #about-phone {
+        height: 1200px;
     }
 }
