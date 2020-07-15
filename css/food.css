@@ -441,6 +441,9 @@
         height: 10px;
     }
 
+    .card-body{
+        min-height: 220px;
+        }
 
     .phone_card_b{
         display: none;
@@ -464,4 +467,10 @@
         width: 10px;
         height: 10px;
     }
+}
+
+@media screen and (max-width:376px){
+    .card-body{
+        min-height: 270px;
+        }
 }
