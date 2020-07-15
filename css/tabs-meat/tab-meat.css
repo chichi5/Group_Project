@@ -160,11 +160,11 @@
 
 .line_3::before {
     content: '';
-    width: 30%;
+    width: 35%;
     height: 270px;
     position: absolute;
     top: 0;
-    left: 130px;
+    left: 115px;
     border-bottom: 1px solid white;
 }
 
@@ -179,11 +179,11 @@
 
 .line_4::before {
     content: '';
-    width: 30%;
+    width: 35%;
     height: 250px;
     position: absolute;
     top: 0;
-    left: 130px;
+    left: 115px;
     border-bottom: 1px solid white;
 }
 
@@ -214,5 +214,116 @@
 
 .text_title2 {
     font-size: 36px;
+    
+}
+
+@media (max-width: 1199px){
+    .line_3::before {
+        width: 40%;        
+        left: 90px;        
+    }
+
+    .line_4::before {
+        width: 40%;
+        left: 90px;
+    }    
+}
+
+@media (max-width: 991px){
+    .line_1::before {
+        height: 198.44px;        
+    }
+
+    .line_3::before {        
+        width: 35%;
+        height: 150px;        
+        top: 60px;
+        left: 160px;
+        border-right: 1px solid white;
+        border-bottom: none;
+    }
+
+    .line_4::before {       
+        width: 35%;
+        height: 150px;       
+        top: 60px;
+        left: 140px;
+        border-right: 1px solid white;
+        border-bottom: none;
+
+    }    
+}
+
+@media (max-width: 767px){
+    .line_1::before {
+        height: 228.44px;        
+    }
+
+    .line_3::before {        
+        left: 120px;
+    }
+
+    .line_4::before {        
+        left: 120px;
+    }
+    
+}
+
+@media (max-width: 575px){
+    .line_4::before {        
+        left: 100px;
+    }
+    
+}
+
+@media (max-width: 540px){
+    .line_3::before {        
+        left: 100px;
+    }
+
+    .line_4::before {        
+        left: 110px;
+    }
+    
+}
+
+@media (max-width: 470px){
+    .line_3::before {        
+        left: 90px;
+    }
+
+    .line_4::before {        
+        left: 90px;
+    }
+    
+}
+
+@media (max-width: 400px){
+    .line_1::before {
+        height: 248.44px;        
+    }
+
+    .line_3::before {        
+        left: 80px;
+    }
+
+    .line_4::before {        
+        left: 80px;
+    }
+    
+}
+
+@media (max-width: 320px){
+    .line_1::before {
+        height: 268.44px;        
+    }
+
+    .line_3::before {        
+        left: 60px;
+    }
+
+    .line_4::before {        
+        left: 60px;
+    }
     
 }
