@@ -305,6 +305,29 @@
     
 }
 
+@media (max-width: 549px){
+    .line_2::before {
+        height: 338.44px;        
+    }
+
+    .line_3::before {
+        height: 278.44px;        
+    }
+
+    .line_4::before {
+        height: 318.44px;        
+    }
+
+    .line_5::before {
+        height: 278.44px;        
+    }
+
+    .line_6::before {
+        height: 318.44px;        
+    }
+    
+}
+
 @media (max-width: 480px){
     .line_2::before {
         height: 348.44px;        
