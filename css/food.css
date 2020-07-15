@@ -401,7 +401,14 @@
 }
 
 @media screen and (max-width:768px){
+    #food{
+        display: none;
+    }
     #food_phone{
+        background-image: url('../img/food/phone/food-phone-bg.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         display: block;
     }
     .card-title{
@@ -411,10 +418,50 @@
     .card-text{
         font-size: 18px;
     }
-    .phone_card{
+    .phone_card_t{
         display: none;
+        background-color: white;
     }
-    .phone_card.active{
+    .phone_card_t.active{
         display: block;
+    }
+    .phone_card_btns_t{
+        width: 90%;
+        background-color: rgba(90, 90, 90, 0.808);
+    }
+    .phone_btn_t{
+        background-color: #C9CACA;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+    }
+    .phone_btn_t.active{
+        background-color: #9FA0A0;
+        width: 10px;
+        height: 10px;
+    }
+
+
+    .phone_card_b{
+        display: none;
+        background-color: white;
+    }
+    .phone_card_b.active{
+        display: block;
+    }
+    .phone_card_btns_b{
+        width: 90%;
+        background-color: rgba(90, 90, 90, 0.808);
+    }
+    .phone_btn_b{
+        background-color: #C9CACA;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+    }
+    .phone_btn_b.active{
+        background-color: #9FA0A0;
+        width: 10px;
+        height: 10px;
     }
 }
