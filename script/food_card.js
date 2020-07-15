@@ -104,6 +104,33 @@ function Allclearfullcard() {
 
     //酒卡
 
+    var winecards = document.querySelectorAll('.phone_card_t')
+    var winebtns = document.querySelectorAll('.phone_btn_t')
+
+    for (let i = 0; i < winecards.length; i++) {
+        const winecard = winecards[i];
+        const winebtn = winebtns[i];
+
+        winebtn.onmouseover = function() {
+            AllclearWinebtns()
+
+            winecard.classList.add('active')
+            winebtn.classList.add('active')
+        }
+
+        function AllclearWinebtns() {
+            for (let i = 0; i < winebtns.length; i++) {
+                const winecard = winecards[i];
+                const winebtn = winebtns[i];
+
+            winecard.classList.remove('active')
+            winebtn.classList.remove('active')
+        }
+
+    }
+}
+
+
     //肉卡
     var meatcards = document.querySelectorAll('.phone_card_b')
     var meatbtns = document.querySelectorAll('.phone_btn_b')
@@ -124,10 +151,10 @@ function Allclearfullcard() {
                 const meatcard = meatcards[i];
                 const meatbtn = meatbtns[i];
 
-                meatcard.classList.remove('active')
+            meatcard.classList.remove('active')
             meatbtn.classList.remove('active')
         }
 
     }
-
+}
     
