@@ -17,6 +17,9 @@
     height: 100%;
 }
 
+
+
+
 /* 以下 Lightbox */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,600,800|Open+Sans+Condensed:300,700);
 
@@ -137,4 +140,88 @@
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+
+
+
+#media_phone{
+    width: 100%;
+    /* height: 100vh; */
+    background-image: url('../img/media/media-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    display: none;
+}
+
+.media-p{
+    padding: 60px 0;
+}
+
+.media-s{
+    
+    position: relative;
+    bottom: 0 !important;
+    margin: 30px 0 0 0;
+    
+}
+
+.swiper-slide .video-container {
+    width: 100%;
+    height: 0;
+    position: relative;
+    padding-bottom: 56.25%;
+  }
+  /* .swiper-slide .video-container iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; 
+  } */
+
+  
+  
+  /* .swiper-container {
+    width: 100%;
+    position: relative;
+  } */
+
+
+
+
+  .video-container {
+
+    position: relative;
+    
+    padding-bottom: 56.25%;
+    
+    padding-top: 30px;
+    
+    height: 0;
+    
+    overflow: hidden;
+    
+    }
+    
+    .video-container iframe, .video-container object, .video-container embed {
+    
+    position: absolute;
+    
+    top: 0;left: 0;
+    
+    width: 100%;
+    
+    height: 100%;
+}
+
+@media (max-width: 576px){
+    #media{
+        display: none;
+    }
+    #media_phone{
+        display: block;
+    }
 }
