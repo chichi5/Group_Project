@@ -194,7 +194,7 @@ body{
 }
 
 .order a{
-    
+
 }
 
 @media screen and (max-width: 1450px){
@@ -407,6 +407,22 @@ body{
     }
     .banner .container{
         min-height: 400px;
+        }
+
+        .banner .navbtns{
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .banner .navbtns .btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 12px;
+            height: 100%;
+            line-height: 50px;
         }
 }
 
