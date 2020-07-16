@@ -380,23 +380,46 @@
     }
 }
 
+@media screen and (max-width:414px){
+
+    .order{
+        width: 260px;
+        height: 40px;
+        left: 19%;
+        top: 70%;
+    }
+    .r-ani{
+        left:-5%;
+        top: 20%;
+    }
+
+    #smoke{
+        left: -5%;
+        top: 20%;
+    }
+    .banner .container{
+        min-height: 400px;
+        }
+}
+
 @media screen and (max-width:375px){
+    .banner .container{
+        min-height: 0px;
+        }
     
     .r-ani{
-        left: -15%;
+        left: -11%;
         top: 0%;
         width: 400px;
         height: 300px;
     }
     #smoke{
-        left: -15%;
+        left: -11%;
         top: 0%;
         width: 400px;
         height: 300px;
     }
     .order{
-        width: 260px;
-        height: 40px;
         left: 15%;
         top: 65%;
     }
