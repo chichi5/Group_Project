@@ -281,22 +281,25 @@
 }
 
 @media screen and (max-width: 768px){
+    .banner{
+        /* min-height: 800px; */
+    }
     .banner .logo {
         width: 58px;
         height: 60px;
     }
 
     .banner .container{
-        min-height: 500px;
+        /* min-height: 500px; */
         }
     .r-ani{
-        top: -15%;
-        right: 3%;
+        top: 15%;
+        right: 13%;
     }
 
     #smoke{
-        top: 17%;
-        right: 3%;
+        top: 15%;
+        right: 13%;
     }
     #title_text{
         top: 0%;
@@ -325,13 +328,13 @@
     }
     .order{
         position: absolute;
-        width: 260px;
-        right: 30%;
-        bottom: 13%;
+        width: 460px;
+        left: 20%;
+        top: 75%;
     }
     #title_text{
         top: 0%;
-        left: 7%;
+        left: 17%;
     }
     #title_text h1{
         font-size: 20px;
@@ -342,6 +345,17 @@
 }
 
 @media screen and (max-width:576px){
+    .banner{
+        min-height: 0;
+    }
+    .banner .logo {
+        width: 58px;
+        height: 60px;
+    }
+
+    .banner .container{
+        min-height: 0px;
+        }
     #title_text{
         left: 4%;
     }
@@ -370,7 +384,7 @@
     
     .r-ani{
         left: -15%;
-        top: 10%;
+        top: 0%;
         width: 400px;
         height: 300px;
     }
@@ -384,7 +398,7 @@
         width: 260px;
         height: 40px;
         left: 15%;
-        bottom: 20%;
+        top: 65%;
     }
     .order-btn{
         font-size: 18px;
