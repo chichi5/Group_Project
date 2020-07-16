@@ -24,6 +24,9 @@
     <link rel="stylesheet" href="./css/media.css">
     <link rel="stylesheet" href="./css/footer.css">
 
+    <!-- AOS link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
     <!-- media_video CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
@@ -110,11 +113,16 @@
                 </div>
 
             </div>
-            <div class="order">
-                <div class="order-btn">
-                    <p>線上訂位</p>
+
+            <a href="">
+                <div class="order">
+
+                    <div class="order-btn">
+                        <p>線上訂位</p>
+                    </div>
                 </div>
-            </div>
+            </a>
+
 
         </div>
     </nav>
@@ -124,14 +132,14 @@
     <section id="menu_point">
 
         <div id="menu">
-            <div class="title_bg">
+            <div class="title_bg" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                 <!-- title_bg 的 css樣式 可以共用 -->
                 <div class="title_l"></div>
                 <p>MENU</p>
                 <div class="title_r"></div>
             </div>
 
-            <div id="canvas">
+            <div id="canvas" data-aos="fade-up" data-aos-duration="3000">
                 <div class="magazine-viewport">
                     <div class="container">
                         <div class="magazine">
@@ -226,7 +234,7 @@
 
 
             <div class="row">
-                <div class="title_bg">
+                <div class="title_bg" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <!-- title_bg 的 css樣式 可以共用 -->
                     <div class="title_l"></div>
                     <p>ABOUT</p>
@@ -234,7 +242,7 @@
                 </div>
             </div>
 
-            <div class="container mb-5">
+            <div class="container mb-5" data-aos="zoom-in">
                 <div class="row">
                     <div class="col-lg-12 p-0">
                         <div class="area a_bg_set">
@@ -306,7 +314,7 @@
         <div>
             <div id="food">
 
-                <div class="title_bg">
+                <div class="title_bg" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <!-- title_bg 的 css樣式 可以共用 -->
                     <div class="title_l"></div>
                     <p>FOOD</p>
@@ -315,7 +323,7 @@
 
 
                 <!-- 酒卡 -->
-                <div class="card-area-t card-area-style ">
+                <div class="card-area-t card-area-style " data-aos="fade-right">
                     <div id="fdmusk-t" class="fdmusk"></div>
 
                     <div id="card-btn-t" class="card-btns card-btns-l">
@@ -359,7 +367,7 @@
                 </div>
 
                 <!-- 肉卡 -->
-                <div class="card-area-b card-area-style active">
+                <div class="card-area-b card-area-style active" data-aos="fade-left">
                     <div id="fdmusk-b" class="fdmusk active"></div>
                     <div id="b_card_1" class="card_style_b active">
                         <div class="card-b-text"></div>
@@ -504,11 +512,11 @@
 
     <!-- 媒體 -->
     <section id="media_point">
-        
-        <div id="media" class="container-fluid">
+
+        <div id="media" class="container-fluid" data-aos="zoom-in-down">
 
             <div class="row">
-                <div class="title_bg">
+                <div class="title_bg" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
                     <!-- title_bg 的 css樣式 可以共用 -->
                     <div class="title_l"></div>
                     <p>MEDIA</p>
@@ -602,7 +610,7 @@
         </div>
     </section>
 
-<!-- 頁尾 -->
+    <!-- 頁尾 -->
     <footer id="footer_point">
         <div>
             <div id="footer_1" class="container-fluid">
@@ -627,7 +635,7 @@
                             <p>台中市益豐路四段669號1F</p>
                         </div>
                     </div>
-    
+
                     <div class="copyright">
                         <p>©本網站僅供教學及練習使用，若有冒犯請洽0912-345678。</p>
                     </div>
@@ -635,8 +643,8 @@
             </div>
         </div>
     </footer>
-    
-    
+
+
 
 
 
@@ -690,6 +698,11 @@
     <script src="./script/media_swiper.js"></script>
     <!-- media_lightbox 外連 -->
     <script src="./script/media_lightbox.js"></script>
+    <!-- AOS js link -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

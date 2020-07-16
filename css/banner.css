@@ -193,6 +193,10 @@ body{
     display: none;
 }
 
+.order a{
+    
+}
+
 @media screen and (max-width: 1450px){
     #smoke{
         right:-1%
