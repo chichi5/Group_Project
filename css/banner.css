@@ -431,8 +431,9 @@
         justify-content: center;
         align-items: center;
         font-size: 12px;
-        height: auto;
+        height: 100%;
         line-height: 50px;
+
     }
     .banner .navbtns{
         height: 50px;
