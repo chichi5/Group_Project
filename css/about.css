@@ -146,7 +146,7 @@
 
 @media (max-width: 768px){
     .a_bg_set-phone{
-         min-height: 1300px;
+        min-height: 1300px;
     }
         #about-phone {
         display: block;
@@ -162,9 +162,32 @@
     }
 
     .a_text-phone p {
-        padding: 20px 60px 0px 120px;
+        padding: 20px 60px 0px 140px;
         font-size: 30px;
         letter-spacing: 10px;
+    }
+
+    .nn {
+        display: none;        
+    }
+}
+
+@media (max-width: 576px){
+    .box_push-phone {
+        height: 600px;
+    }
+
+    .a_text-phone h3 {
+        margin: 100px 0 0 220px;
+    }
+
+    .a_text-phone p {
+        padding: 20px 30px 0px 30px;
+
+    }
+
+    .nn {
+        display: none;
     }
 }
 
