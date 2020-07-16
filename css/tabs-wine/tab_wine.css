@@ -298,9 +298,12 @@
     }
 }
 
-@media (max-width: 767px){
+@media (max-width: 768px){
     .line_2::before {
         height: 308.44px;        
+    }
+    .x18_set{
+        height: 100px;
     }
     
 }
@@ -350,6 +353,12 @@
     }
 }
 
+@media (max-width:414px){
+    .x18_set{
+        height: 60px;
+    }
+}
+
 @media (max-width: 400px){
     .line_1::before {
         height: 248.44px;        
@@ -376,6 +385,11 @@
     }
 
 
+}
+@media (max-width:375px){
+    .x18_set{
+        height: 50px;
+    }
 }
 
 @media (max-width: 320px){
